@@ -1,4 +1,4 @@
-(ns patient_backend.db-test
+(ns patient_backend.db_test
   (:require [clojure.test :refer :all]
             [patient_backend.db :as db]))
 

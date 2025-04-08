@@ -2,57 +2,41 @@
   (:require [next.jdbc :as jdbc]
             [mount.core :refer [defstate]]))
 
-;; Define the PostgreSQL connection specs
-(def db-spec
-  {:dbtype "postgresql"
-   :host "localhost"
-   :port 5432
-   :dbname "patients"
-   :user "postgres"
-   :password "admin"})
-
-;; Use mount to manage the datasource lifecycle
+;; Define the datasource state using mount
 (defstate datasource
-          :start (jdbc/get-datasource db-spec)
-          :stop nil)  ;; No need to explicitly close the datasource
+          :start (jdbc/get-datasource {:dbtype "postgresql"
+                                       :host "localhost"
+                                       :port 5432
+                                       :dbname "patient"
+                                       :user "postgres"
+                                       :password "admin"})
+          :stop (fn [] (println "Datasource stop is handled by mount, no need for close!")))
 
-;; Create the patient table if it doesn't already exist
+;; Create patient table function
 (defn create-patient-table []
-  (when-not (jdbc/execute! datasource ["SELECT to_regclass('patients')"])[0]
-                                                                         (jdbc/execute! datasource
-                                                                                        ["CREATE TABLE IF NOT EXISTS patients (
-                      id SERIAL PRIMARY KEY,
-                      full_name VARCHAR(255) NOT NULL,
-                      gender VARCHAR(50) NOT NULL,
-                      birth_date DATE NOT NULL,
-                      address TEXT NOT NULL,
-                      oms_number VARCHAR(255) NOT NULL
-                   )"])))
+  (let [sql "CREATE TABLE IF NOT EXISTS patients (id SERIAL PRIMARY KEY, full_name VARCHAR, gender VARCHAR, birth_date DATE, address TEXT, oms_number VARCHAR)"]
+    (try
+      ;; Correct usage of execute! with datasource dereference
+      (jdbc/execute! @datasource [sql])
+      (println "Patient table created or already exists.")
+      (catch Exception e
+        (println "Error creating patient table:" (.getMessage e))))))
 
-;; Retrieve all patients
-(defn get-all-patients []
-  (jdbc/execute! datasource ["SELECT * FROM patients"]))
-
-;; Retrieve a patient by their ID
-(defn get-patient [id]
-  (jdbc/execute-one! datasource ["SELECT * FROM patients WHERE id = ?" id]))
-
-;; Insert a new patient into the database
+;; Insert patient function
 (defn insert-patient [patient]
-  (jdbc/execute-one! datasource
-                     ["INSERT INTO patients (full_name, gender, birth_date, address, oms_number)
-                       VALUES (?, ?, ?, ?, ?) RETURNING id"
-                      (:full_name patient) (:gender patient) (:birth_date patient)
-                      (:address patient) (:oms_number patient)]))
-
-;; Update an existing patient
-(defn update-patient [id patient]
-  (jdbc/execute-one! datasource
-                     ["UPDATE patients SET full_name = ?, gender = ?, birth_date = ?, address = ?, oms_number = ?
-                       WHERE id = ? RETURNING *"
-                      (:full_name patient) (:gender patient) (:birth_date patient)
-                      (:address patient) (:oms_number patient) id]))
-
-;; Delete a patient by their ID
-(defn delete-patient [id]
-  (jdbc/execute! datasource ["DELETE FROM patients WHERE id = ?" id]))
+  (let [sql "INSERT INTO patients (full_name, gender, birth_date, address, oms_number)
+             VALUES (?, ?, ?, ?, ?) RETURNING id"
+        params [(get patient :full_name)
+                (get patient :gender)
+                (get patient :birth_date)
+                (get patient :address)
+                (get patient :oms_number)]]
+    (try
+      ;; Correct usage of execute! with datasource dereference
+      (let [result (jdbc/execute! @datasource [sql params])]
+        (if (seq result)
+          (get (first result) :id)  ;; Return the ID if insertion is successful
+          (throw (ex-info "Failed to insert patient" {}))))
+      (catch Exception e
+        (println "Error inserting patient:" (.getMessage e))
+        nil)))) ;; Return nil or appropriate error value in case of failure

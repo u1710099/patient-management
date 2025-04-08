@@ -1,34 +1,55 @@
 (ns patient_backend.core
-  (:gen-class)
   (:require [ring.adapter.jetty :as jetty]
+            [ring.middleware.json :as json]
             [patient_backend.db :as db]
-            [ring.util.response :as response]
-            [cheshire.core :as json]
-            [ring.middleware.json :as ring-json]  ;; Correct import for JSON middleware
-            [mount.core :as mount]))  ;; Correctly include mount for state management
+            [compojure.core :refer [defroutes POST GET]]
+            [ring.util.response :refer [response]]
+            [clojure.tools.logging :as log]
+            [mount.core :as mount]))
 
-;; Your handler for patient creation
+;; Start all the mount states before starting the server
+(mount/start)
+
+;; Your handler function for creating a patient
 (defn create-patient-handler [request]
-  (let [patient (json/decode (slurp (:body request)) true)]  ;; Decode JSON into a Clojure map
-    (if (and (:full_name patient) (:gender patient) (:birth_date patient) (:address patient) (:oms_number patient))
-      (do
-        (db/insert-patient patient)  ;; Insert patient into database
-        (response/created "/patients"))  ;; Return 201 Created with URI
-      (response/bad-request "Invalid patient data"))))  ;; Return 400 Bad Request
+  (log/info "Received request to create a patient" request) ;; Log the request
+  (let [patient (get-in request [:json-params])] ;; Use :json-params to access the parsed JSON body
+    (if patient
+      (let [id (db/insert-patient patient)]  ;; Assuming `insert-patient` is a function to insert the patient into DB
+        {:status 201
+         :body {:message "Patient created"
+                :id id}})
+      {:status 400
+       :body {:message "Invalid patient data"}})))
 
-;; Define your routes, include POST for patient creation
-(def routes
-  (fn [request]
-    (case (:uri request)
-      "/patients" (case (:request-method request)
-                    :post (create-patient-handler request)
-                    (response/not-found "Route not found"))
-      (response/not-found "Route not found"))))
+;; Your handler function for favicon.ico
+(defn favicon-handler [request]
+  (log/info "Received request for favicon.ico")
+  (response ""))  ;; Respond with an empty response for the favicon request
 
-;; Main function to start the server and initialize resources
-(defn -main [& args]
-  (mount/start)  ;; Start mount to initialize all states
-  (db/create-patient-table) ;; Ensure table creation on app start
-  (jetty/run-jetty (ring-json/wrap-json-response
-                     (ring-json/wrap-json-body routes))  ;; Use the correct middleware
-                   {:port 3000}))  ;; Run the server on port 3000
+;; Your handler function for root ("/") route
+(defn root-handler [request]
+  (log/info "Received request for root route")
+  {:status 200
+   :body {:message "Welcome to the Patient Backend"}})  ;; Respond with a message
+
+;; Set up the routes
+(defroutes routes
+           (POST "/patients" request (create-patient-handler request))
+           (GET "/favicon.ico" [] (favicon-handler nil))  ;; Add favicon handler route
+           (GET "/" [] (root-handler nil)))  ;; Handle the root ("/") route
+
+(def app
+  (-> routes
+      (json/wrap-json-body {:keywords? true})
+      (json/wrap-json-params)
+      (json/wrap-json-response)))
+
+;; Start the server
+(defn start-server []
+  (jetty/run-jetty app {:port 3000 :join? false}))
+
+(defn -main []
+  (println "Starting patient backend server...")
+  (db/create-patient-table)  ;; Ensure table creation before starting the server
+  (start-server))  ;; Start the server after table creation

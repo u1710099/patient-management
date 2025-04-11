@@ -1,7 +1,7 @@
 (ns patient_backend.core
   (:require [ring.adapter.jetty :as jetty]
             [ring.middleware.json :as json]
-            [compojure.core :refer [defroutes POST GET PUT]]
+            [compojure.core :refer [defroutes POST GET PUT DELETE]]
             [ring.util.response :refer [response]]
             [clojure.tools.logging :as log]
             [mount.core :as mount]
@@ -34,6 +34,18 @@
     {:status 200
      :body patients}))
 
+(defn delete-patient-handler [request]
+  (let [request-body (:body request)          ;; Extract the full body from the request
+        id (:id request-body)]                  ;; Extract 'id' from the body
+    (log/info "Received delete request with body:" request-body)  ;; Log the body for debugging
+    (if id
+      (do
+        (db/delete-patient id)
+        {:status 200
+         :body {:message "Patient deleted"}})
+      {:status 400
+       :body {:message "Missing patient ID"}})))
+
 (defn favicon-handler [_]
   (response ""))
 
@@ -45,6 +57,7 @@
            (POST "/patients" request (create-patient-handler request))
            (PUT "/patients" request (update-patient-handler request))
            (GET "/patients" [] (get-all-patients-handler nil))
+           (DELETE "/patients" request (delete-patient-handler request))
            (GET "/favicon.ico" [] (favicon-handler nil))
            (GET "/" [] (root-handler nil)))
 

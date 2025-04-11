@@ -48,3 +48,7 @@
 
 (defn get-all-patients []
   (jdbc/execute! ds ["SELECT * FROM patients"]))
+(defn delete-patient [id]
+  (jdbc/execute! ds ["DELETE FROM patients WHERE id = ?" id]))
+
+

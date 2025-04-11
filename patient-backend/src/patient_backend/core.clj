@@ -18,6 +18,11 @@
       {:status 400
        :body {:message "Invalid patient data"}})))
 
+(defn get-all-patients-handler [_]
+  (let [patients (db/get-all-patients)]
+    {:status 200
+     :body patients}))
+
 (defn favicon-handler [_]
   (response ""))
 
@@ -27,6 +32,7 @@
 
 (defroutes routes
            (POST "/patients" request (create-patient-handler request))
+           (GET "/patients" [] (get-all-patients-handler nil))
            (GET "/favicon.ico" [] (favicon-handler nil))
            (GET "/" [] (root-handler nil)))
 

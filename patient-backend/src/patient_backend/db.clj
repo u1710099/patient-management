@@ -35,3 +35,6 @@
                     birth-date
                     (:address patient)
                     (:oms_number patient)])))
+
+(defn get-all-patients []
+  (jdbc/execute! ds ["SELECT * FROM patients"]))

@@ -35,6 +35,16 @@
                     birth-date
                     (:address patient)
                     (:oms_number patient)])))
+(defn update-patient [id patient]
+  (let [birth-date (Date/valueOf (:birth_date patient))]
+    (jdbc/execute! ds
+                   ["UPDATE patients SET full_name = ?, gender = ?, birth_date = ?, address = ?, oms_number = ? WHERE id = ?"
+                    (:full_name patient)
+                    (:gender patient)
+                    birth-date
+                    (:address patient)
+                    (:oms_number patient)
+                    id])))
 
 (defn get-all-patients []
   (jdbc/execute! ds ["SELECT * FROM patients"]))

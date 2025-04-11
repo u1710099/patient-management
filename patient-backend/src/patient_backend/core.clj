@@ -1,7 +1,7 @@
 (ns patient_backend.core
   (:require [ring.adapter.jetty :as jetty]
             [ring.middleware.json :as json]
-            [compojure.core :refer [defroutes POST GET]]
+            [compojure.core :refer [defroutes POST GET PUT]]
             [ring.util.response :refer [response]]
             [clojure.tools.logging :as log]
             [mount.core :as mount]
@@ -18,6 +18,17 @@
       {:status 400
        :body {:message "Invalid patient data"}})))
 
+(defn update-patient-handler [request]
+  (let [patient (:body request)
+        id (:id patient)]
+    (if (and id patient)
+      (do
+        (db/update-patient id patient)
+        {:status 200
+         :body {:message "Patient updated"}})
+      {:status 400
+       :body {:message "Missing or invalid patient data"}})))
+
 (defn get-all-patients-handler [_]
   (let [patients (db/get-all-patients)]
     {:status 200
@@ -32,6 +43,7 @@
 
 (defroutes routes
            (POST "/patients" request (create-patient-handler request))
+           (PUT "/patients" request (update-patient-handler request))
            (GET "/patients" [] (get-all-patients-handler nil))
            (GET "/favicon.ico" [] (favicon-handler nil))
            (GET "/" [] (root-handler nil)))

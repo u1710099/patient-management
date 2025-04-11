@@ -51,4 +51,22 @@
 (defn delete-patient [id]
   (jdbc/execute! ds ["DELETE FROM patients WHERE id = ?" id]))
 
+;; Function to search patients by a term (name, gender, or OMS number)
+(defn search-patient [search-term]
+  (jdbc/execute!
+    ds
+    ["SELECT * FROM patients
+     WHERE full_name ILIKE ?
+        OR gender ILIKE ?
+        OR address ILIKE ?
+        OR oms_number ILIKE ?
+        OR TO_CHAR(birth_date, 'YYYY-MM-DD') ILIKE ?"
+     (str "%" search-term "%")
+     (str "%" search-term "%")
+     (str "%" search-term "%")
+     (str "%" search-term "%")
+     (str "%" search-term "%")]))
+
+
+
 

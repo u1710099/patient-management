@@ -3,6 +3,7 @@
             [ring.middleware.json :as json]
             [compojure.core :refer [defroutes POST GET PUT DELETE]]
             [ring.util.response :refer [response]]
+            [ring.middleware.params :refer [wrap-params]]
             [clojure.tools.logging :as log]
             [mount.core :as mount]
             [patient_backend.db :as db]))
@@ -46,6 +47,15 @@
       {:status 400
        :body {:message "Missing patient ID"}})))
 
+(defn search-patient-handler [request]
+  (let [search-term (get-in request [:query-params "search"])] ;; << here!
+    (if (and search-term (not (clojure.string/blank? search-term)))
+      (let [patients (db/search-patient search-term)]
+        (if (seq patients)
+          {:status 200 :body patients}
+          {:status 404 :body {:message "No patients found"}}))
+      {:status 400 :body {:message "Search term is required"}})))
+
 (defn favicon-handler [_]
   (response ""))
 
@@ -58,11 +68,13 @@
            (PUT "/patients" request (update-patient-handler request))
            (GET "/patients" [] (get-all-patients-handler nil))
            (DELETE "/patients" request (delete-patient-handler request))
+           (GET "/patients/search" request (search-patient-handler request))  ;; Search route
            (GET "/favicon.ico" [] (favicon-handler nil))
            (GET "/" [] (root-handler nil)))
 
 (def app
   (-> routes
+      wrap-params
       (json/wrap-json-response)
       (json/wrap-json-body {:keywords? true})))
 

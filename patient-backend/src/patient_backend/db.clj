@@ -1,5 +1,6 @@
 (ns patient_backend.db
   (:require [next.jdbc :as jdbc]
+            [clojure.tools.logging :as log]
             [mount.core :refer [defstate]])
   (:import [java.sql Date]))
 (def db-spec
@@ -66,6 +67,30 @@
      (str "%" search-term "%")
      (str "%" search-term "%")
      (str "%" search-term "%")]))
+
+
+(defn filter-patient [{:keys [full_name gender birth_date address oms_number]}]
+  (let [base "SELECT * FROM patients WHERE 1=1"
+        [query params]
+        (reduce
+          (fn [[q p] [field val]]
+            (if val
+              (case field
+                :full_name [(str q " AND full_name ILIKE ?") (conj p (str "%" val "%"))]
+                :gender [(str q " AND gender ILIKE ?") (conj p (str "%" val "%"))]
+                :birth_date [(str q " AND TO_CHAR(birth_date, 'YYYY-MM-DD') = ?") (conj p val)]
+                :address [(str q " AND address ILIKE ?") (conj p (str "%" val "%"))]
+                :oms_number [(str q " AND oms_number ILIKE ?") (conj p (str "%" val "%"))]
+                [q p])
+              [q p]))
+          [base []]
+          {:full_name full_name
+           :gender gender
+           :birth_date birth_date
+           :address address
+           :oms_number oms_number})]
+    (log/info "🔍 Executing filter query:" query "with params:" params)
+    (jdbc/execute! ds (into [query] params))))
 
 
 

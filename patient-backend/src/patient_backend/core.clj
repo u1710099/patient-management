@@ -56,6 +56,26 @@
           {:status 404 :body {:message "No patients found"}}))
       {:status 400 :body {:message "Search term is required"}})))
 
+(defn filter-patient-handler [request]
+  (try
+    (let [{:strs [full_name gender birth_date address oms_number]} (:query-params request)]
+      (if (or full_name gender birth_date address oms_number)
+        (let [filters {:full_name full_name
+                       :gender gender
+                       :birth_date birth_date
+                       :address address
+                       :oms_number oms_number}
+              patients (db/filter-patient filters)]
+          (if (and patients (seq patients))
+            {:status 200 :body patients}
+            {:status 404 :body {:message "No patients found with given filters"}}))
+        {:status 400 :body {:message "At least one filter parameter is required"}}))
+    (catch Exception e
+      (do
+        (log/error e "Failed to filter patients")
+        {:status 500 :body {:message "Internal server error"}}))))
+
+
 (defn favicon-handler [_]
   (response ""))
 
@@ -69,6 +89,7 @@
            (GET "/patients" [] (get-all-patients-handler nil))
            (DELETE "/patients" request (delete-patient-handler request))
            (GET "/patients/search" request (search-patient-handler request))  ;; Search route
+           (GET "/patients/filter" request (filter-patient-handler request))
            (GET "/favicon.ico" [] (favicon-handler nil))
            (GET "/" [] (root-handler nil)))
 

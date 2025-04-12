@@ -1,0 +1,9 @@
+{:source-paths ["src"]
+ :dependencies [[reagent "1.1.0"]
+                [cljs-ajax "0.8.1"]
+                [cljs-http "0.1.46"]] ; Add the cljs-http dependency
+ :builds
+ {:app {:target :browser
+        :output-dir "resources/public/js"
+        :asset-path "/js"
+        :modules {:main {:entries [patient-frontend.core]}}}}}

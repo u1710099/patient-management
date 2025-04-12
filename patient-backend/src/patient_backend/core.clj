@@ -1,5 +1,6 @@
 (ns patient_backend.core
   (:require [ring.adapter.jetty :as jetty]
+            [ring.middleware.cors :refer [wrap-cors]]
             [ring.middleware.json :as json]
             [compojure.core :refer [defroutes POST GET PUT DELETE]]
             [ring.util.response :refer [response]]
@@ -11,7 +12,7 @@
 (defn create-patient-handler [request]
   (let [patient (:body request)]
     (log/info "🧾 Received parsed patient:" patient)
-    (if patient
+    (if (some? patient)  ;; Ensure patient is not nil
       (do
         (db/insert-patient patient)
         {:status 201
@@ -97,7 +98,9 @@
   (-> routes
       wrap-params
       (json/wrap-json-response)
-      (json/wrap-json-body {:keywords? true})))
+      (json/wrap-json-body {:keywords? true})
+      (wrap-cors :access-control-allow-origin [#".*"]
+                 :access-control-allow-methods [:get :post :put :delete])))
 
 (defn start-server []
   (jetty/run-jetty app {:port 3000 :join? false}))

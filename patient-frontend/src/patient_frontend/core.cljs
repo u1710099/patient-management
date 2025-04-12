@@ -124,6 +124,7 @@
 (defn init []
       (fetch-patients)
       (rdom/render [app] (.getElementById js/document "app")))
+
 (init)
 
 

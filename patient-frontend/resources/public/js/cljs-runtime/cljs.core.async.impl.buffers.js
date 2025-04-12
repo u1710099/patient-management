@@ -5,8 +5,8 @@ while(true){
 if((cnt < len)){
 (dest[(dest_start + cnt)] = (src[(src_start + cnt)]));
 
-var G__14013 = (cnt + (1));
-cnt = G__14013;
+var G__13902 = (cnt + (1));
+cnt = G__13902;
 continue;
 } else {
 return null;
@@ -109,14 +109,14 @@ var n__5593__auto__ = self__.length;
 var x = (0);
 while(true){
 if((x < n__5593__auto__)){
-var v_14020 = this$.pop();
-if((keep_QMARK_.cljs$core$IFn$_invoke$arity$1 ? keep_QMARK_.cljs$core$IFn$_invoke$arity$1(v_14020) : keep_QMARK_.call(null, v_14020))){
-this$.unshift(v_14020);
+var v_13909 = this$.pop();
+if((keep_QMARK_.cljs$core$IFn$_invoke$arity$1 ? keep_QMARK_.cljs$core$IFn$_invoke$arity$1(v_13909) : keep_QMARK_.call(null,v_13909))){
+this$.unshift(v_13909);
 } else {
 }
 
-var G__14023 = (x + (1));
-x = G__14023;
+var G__13911 = (x + (1));
+x = G__13911;
 continue;
 } else {
 return null;
@@ -327,7 +327,7 @@ return self__.buf.pop();
 var self__ = this;
 var this$__$1 = this;
 if((self__.buf.length === self__.n)){
-this$__$1.cljs$core$async$impl$protocols$Buffer$remove_BANG_$arity$1(null, );
+this$__$1.cljs$core$async$impl$protocols$Buffer$remove_BANG_$arity$1(null);
 } else {
 }
 

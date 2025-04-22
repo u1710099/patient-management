@@ -54,14 +54,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
 }),null));
 cljs.spec.gen.alpha.quick_check = (function cljs$spec$gen$alpha$quick_check(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15617 = arguments.length;
-var i__5727__auto___15618 = (0);
+var len__5726__auto___15583 = arguments.length;
+var i__5727__auto___15584 = (0);
 while(true){
-if((i__5727__auto___15618 < len__5726__auto___15617)){
-args__5732__auto__.push((arguments[i__5727__auto___15618]));
+if((i__5727__auto___15584 < len__5726__auto___15583)){
+args__5732__auto__.push((arguments[i__5727__auto___15584]));
 
-var G__15622 = (i__5727__auto___15618 + (1));
-i__5727__auto___15618 = G__15622;
+var G__15586 = (i__5727__auto___15584 + (1));
+i__5727__auto___15584 = G__15586;
 continue;
 } else {
 }
@@ -79,9 +79,9 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(cljs.spec.g
 (cljs.spec.gen.alpha.quick_check.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.quick_check.cljs$lang$applyTo = (function (seq14646){
+(cljs.spec.gen.alpha.quick_check.cljs$lang$applyTo = (function (seq14770){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14646));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14770));
 }));
 
 cljs.spec.gen.alpha.for_all_STAR__ref = (new cljs.spec.gen.alpha.LazyVar((function (){
@@ -96,14 +96,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.for_all_STAR_ = (function cljs$spec$gen$alpha$for_all_STAR_(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15654 = arguments.length;
-var i__5727__auto___15655 = (0);
+var len__5726__auto___15592 = arguments.length;
+var i__5727__auto___15594 = (0);
 while(true){
-if((i__5727__auto___15655 < len__5726__auto___15654)){
-args__5732__auto__.push((arguments[i__5727__auto___15655]));
+if((i__5727__auto___15594 < len__5726__auto___15592)){
+args__5732__auto__.push((arguments[i__5727__auto___15594]));
 
-var G__15665 = (i__5727__auto___15655 + (1));
-i__5727__auto___15655 = G__15665;
+var G__15597 = (i__5727__auto___15594 + (1));
+i__5727__auto___15594 = G__15597;
 continue;
 } else {
 }
@@ -121,26 +121,26 @@ return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(cljs.spec.g
 (cljs.spec.gen.alpha.for_all_STAR_.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.for_all_STAR_.cljs$lang$applyTo = (function (seq14683){
+(cljs.spec.gen.alpha.for_all_STAR_.cljs$lang$applyTo = (function (seq14807){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14683));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14807));
 }));
 
-var g_QMARK__15669 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g_QMARK__15602 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.generator_QMARK_ !== 'undefined')){
 return clojure.test.check.generators.generator_QMARK_;
 } else {
 throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","generator?","clojure.test.check.generators/generator?",-1378210460,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","generator?","clojure.test.check.generators/generator?",-1378210460,null))," never required"].join('')));
 }
 }),null));
-var g_15670 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g_15603 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.generate !== 'undefined')){
 return clojure.test.check.generators.generate;
 } else {
 throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","generate","clojure.test.check.generators/generate",-690390711,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","generate","clojure.test.check.generators/generate",-690390711,null))," never required"].join('')));
 }
 }),null));
-var mkg_15671 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var mkg_15604 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.__GT_Generator !== 'undefined')){
 return clojure.test.check.generators.__GT_Generator;
 } else {
@@ -148,29 +148,29 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
 }
 }),null));
 cljs.spec.gen.alpha.generator_QMARK_ = (function cljs$spec$gen$alpha$generator_QMARK_(x){
-var fexpr__14690 = cljs.core.deref(g_QMARK__15669);
-return (fexpr__14690.cljs$core$IFn$_invoke$arity$1 ? fexpr__14690.cljs$core$IFn$_invoke$arity$1(x) : fexpr__14690.call(null,x));
+var fexpr__14839 = cljs.core.deref(g_QMARK__15602);
+return (fexpr__14839.cljs$core$IFn$_invoke$arity$1 ? fexpr__14839.cljs$core$IFn$_invoke$arity$1(x) : fexpr__14839.call(null,x));
 });
 
 cljs.spec.gen.alpha.generator = (function cljs$spec$gen$alpha$generator(gfn){
-var fexpr__14691 = cljs.core.deref(mkg_15671);
-return (fexpr__14691.cljs$core$IFn$_invoke$arity$1 ? fexpr__14691.cljs$core$IFn$_invoke$arity$1(gfn) : fexpr__14691.call(null,gfn));
+var fexpr__14850 = cljs.core.deref(mkg_15604);
+return (fexpr__14850.cljs$core$IFn$_invoke$arity$1 ? fexpr__14850.cljs$core$IFn$_invoke$arity$1(gfn) : fexpr__14850.call(null,gfn));
 });
 
 /**
  * Generate a single value using generator.
  */
 cljs.spec.gen.alpha.generate = (function cljs$spec$gen$alpha$generate(generator){
-var fexpr__14692 = cljs.core.deref(g_15670);
-return (fexpr__14692.cljs$core$IFn$_invoke$arity$1 ? fexpr__14692.cljs$core$IFn$_invoke$arity$1(generator) : fexpr__14692.call(null,generator));
+var fexpr__14864 = cljs.core.deref(g_15603);
+return (fexpr__14864.cljs$core$IFn$_invoke$arity$1 ? fexpr__14864.cljs$core$IFn$_invoke$arity$1(generator) : fexpr__14864.call(null,generator));
 });
 cljs.spec.gen.alpha.delay_impl = (function cljs$spec$gen$alpha$delay_impl(gfnd){
 return cljs.spec.gen.alpha.generator((function (rnd,size){
-var fexpr__14700 = new cljs.core.Keyword(null,"gen","gen",142575302).cljs$core$IFn$_invoke$arity$1(cljs.core.deref(gfnd));
-return (fexpr__14700.cljs$core$IFn$_invoke$arity$2 ? fexpr__14700.cljs$core$IFn$_invoke$arity$2(rnd,size) : fexpr__14700.call(null,rnd,size));
+var fexpr__14866 = new cljs.core.Keyword(null,"gen","gen",142575302).cljs$core$IFn$_invoke$arity$1(cljs.core.deref(gfnd));
+return (fexpr__14866.cljs$core$IFn$_invoke$arity$2 ? fexpr__14866.cljs$core$IFn$_invoke$arity$2(rnd,size) : fexpr__14866.call(null,rnd,size));
 }));
 });
-var g__11604__auto___15692 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15622 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.hash_map !== 'undefined')){
 return clojure.test.check.generators.hash_map;
 } else {
@@ -182,14 +182,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.hash_map = (function cljs$spec$gen$alpha$hash_map(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15698 = arguments.length;
-var i__5727__auto___15699 = (0);
+var len__5726__auto___15631 = arguments.length;
+var i__5727__auto___15633 = (0);
 while(true){
-if((i__5727__auto___15699 < len__5726__auto___15698)){
-args__5732__auto__.push((arguments[i__5727__auto___15699]));
+if((i__5727__auto___15633 < len__5726__auto___15631)){
+args__5732__auto__.push((arguments[i__5727__auto___15633]));
 
-var G__15700 = (i__5727__auto___15699 + (1));
-i__5727__auto___15699 = G__15700;
+var G__15636 = (i__5727__auto___15633 + (1));
+i__5727__auto___15633 = G__15636;
 continue;
 } else {
 }
@@ -201,19 +201,19 @@ return cljs.spec.gen.alpha.hash_map.cljs$core$IFn$_invoke$arity$variadic(argseq_
 });
 
 (cljs.spec.gen.alpha.hash_map.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15692),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15622),args);
 }));
 
 (cljs.spec.gen.alpha.hash_map.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.hash_map.cljs$lang$applyTo = (function (seq14706){
+(cljs.spec.gen.alpha.hash_map.cljs$lang$applyTo = (function (seq14893){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14706));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14893));
 }));
 
 
-var g__11604__auto___15705 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15658 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.list !== 'undefined')){
 return clojure.test.check.generators.list;
 } else {
@@ -225,14 +225,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.list = (function cljs$spec$gen$alpha$list(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15714 = arguments.length;
-var i__5727__auto___15715 = (0);
+var len__5726__auto___15675 = arguments.length;
+var i__5727__auto___15678 = (0);
 while(true){
-if((i__5727__auto___15715 < len__5726__auto___15714)){
-args__5732__auto__.push((arguments[i__5727__auto___15715]));
+if((i__5727__auto___15678 < len__5726__auto___15675)){
+args__5732__auto__.push((arguments[i__5727__auto___15678]));
 
-var G__15718 = (i__5727__auto___15715 + (1));
-i__5727__auto___15715 = G__15718;
+var G__15681 = (i__5727__auto___15678 + (1));
+i__5727__auto___15678 = G__15681;
 continue;
 } else {
 }
@@ -244,19 +244,19 @@ return cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic(argseq__573
 });
 
 (cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15705),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15658),args);
 }));
 
 (cljs.spec.gen.alpha.list.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.list.cljs$lang$applyTo = (function (seq14719){
+(cljs.spec.gen.alpha.list.cljs$lang$applyTo = (function (seq14921){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14719));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14921));
 }));
 
 
-var g__11604__auto___15720 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15692 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.map !== 'undefined')){
 return clojure.test.check.generators.map;
 } else {
@@ -268,14 +268,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.map = (function cljs$spec$gen$alpha$map(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15724 = arguments.length;
-var i__5727__auto___15725 = (0);
+var len__5726__auto___15705 = arguments.length;
+var i__5727__auto___15706 = (0);
 while(true){
-if((i__5727__auto___15725 < len__5726__auto___15724)){
-args__5732__auto__.push((arguments[i__5727__auto___15725]));
+if((i__5727__auto___15706 < len__5726__auto___15705)){
+args__5732__auto__.push((arguments[i__5727__auto___15706]));
 
-var G__15727 = (i__5727__auto___15725 + (1));
-i__5727__auto___15725 = G__15727;
+var G__15710 = (i__5727__auto___15706 + (1));
+i__5727__auto___15706 = G__15710;
 continue;
 } else {
 }
@@ -287,19 +287,19 @@ return cljs.spec.gen.alpha.map.cljs$core$IFn$_invoke$arity$variadic(argseq__5733
 });
 
 (cljs.spec.gen.alpha.map.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15720),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15692),args);
 }));
 
 (cljs.spec.gen.alpha.map.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.map.cljs$lang$applyTo = (function (seq14728){
+(cljs.spec.gen.alpha.map.cljs$lang$applyTo = (function (seq14938){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14728));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14938));
 }));
 
 
-var g__11604__auto___15733 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15725 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.not_empty !== 'undefined')){
 return clojure.test.check.generators.not_empty;
 } else {
@@ -311,14 +311,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.not_empty = (function cljs$spec$gen$alpha$not_empty(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15737 = arguments.length;
-var i__5727__auto___15738 = (0);
+var len__5726__auto___15734 = arguments.length;
+var i__5727__auto___15735 = (0);
 while(true){
-if((i__5727__auto___15738 < len__5726__auto___15737)){
-args__5732__auto__.push((arguments[i__5727__auto___15738]));
+if((i__5727__auto___15735 < len__5726__auto___15734)){
+args__5732__auto__.push((arguments[i__5727__auto___15735]));
 
-var G__15739 = (i__5727__auto___15738 + (1));
-i__5727__auto___15738 = G__15739;
+var G__15737 = (i__5727__auto___15735 + (1));
+i__5727__auto___15735 = G__15737;
 continue;
 } else {
 }
@@ -330,19 +330,19 @@ return cljs.spec.gen.alpha.not_empty.cljs$core$IFn$_invoke$arity$variadic(argseq
 });
 
 (cljs.spec.gen.alpha.not_empty.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15733),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15725),args);
 }));
 
 (cljs.spec.gen.alpha.not_empty.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.not_empty.cljs$lang$applyTo = (function (seq14753){
+(cljs.spec.gen.alpha.not_empty.cljs$lang$applyTo = (function (seq14957){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14753));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14957));
 }));
 
 
-var g__11604__auto___15741 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15740 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.set !== 'undefined')){
 return clojure.test.check.generators.set;
 } else {
@@ -354,14 +354,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.set = (function cljs$spec$gen$alpha$set(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15747 = arguments.length;
-var i__5727__auto___15749 = (0);
+var len__5726__auto___15742 = arguments.length;
+var i__5727__auto___15743 = (0);
 while(true){
-if((i__5727__auto___15749 < len__5726__auto___15747)){
-args__5732__auto__.push((arguments[i__5727__auto___15749]));
+if((i__5727__auto___15743 < len__5726__auto___15742)){
+args__5732__auto__.push((arguments[i__5727__auto___15743]));
 
-var G__15752 = (i__5727__auto___15749 + (1));
-i__5727__auto___15749 = G__15752;
+var G__15744 = (i__5727__auto___15743 + (1));
+i__5727__auto___15743 = G__15744;
 continue;
 } else {
 }
@@ -373,19 +373,19 @@ return cljs.spec.gen.alpha.set.cljs$core$IFn$_invoke$arity$variadic(argseq__5733
 });
 
 (cljs.spec.gen.alpha.set.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15741),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15740),args);
 }));
 
 (cljs.spec.gen.alpha.set.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.set.cljs$lang$applyTo = (function (seq14784){
+(cljs.spec.gen.alpha.set.cljs$lang$applyTo = (function (seq14974){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14784));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14974));
 }));
 
 
-var g__11604__auto___15763 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15749 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.vector !== 'undefined')){
 return clojure.test.check.generators.vector;
 } else {
@@ -397,14 +397,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.vector = (function cljs$spec$gen$alpha$vector(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15765 = arguments.length;
-var i__5727__auto___15769 = (0);
+var len__5726__auto___15751 = arguments.length;
+var i__5727__auto___15756 = (0);
 while(true){
-if((i__5727__auto___15769 < len__5726__auto___15765)){
-args__5732__auto__.push((arguments[i__5727__auto___15769]));
+if((i__5727__auto___15756 < len__5726__auto___15751)){
+args__5732__auto__.push((arguments[i__5727__auto___15756]));
 
-var G__15774 = (i__5727__auto___15769 + (1));
-i__5727__auto___15769 = G__15774;
+var G__15757 = (i__5727__auto___15756 + (1));
+i__5727__auto___15756 = G__15757;
 continue;
 } else {
 }
@@ -416,19 +416,19 @@ return cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(argseq__5
 });
 
 (cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15763),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15749),args);
 }));
 
 (cljs.spec.gen.alpha.vector.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.vector.cljs$lang$applyTo = (function (seq14838){
+(cljs.spec.gen.alpha.vector.cljs$lang$applyTo = (function (seq14986){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14838));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14986));
 }));
 
 
-var g__11604__auto___15782 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15763 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.vector_distinct !== 'undefined')){
 return clojure.test.check.generators.vector_distinct;
 } else {
@@ -440,14 +440,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.vector_distinct = (function cljs$spec$gen$alpha$vector_distinct(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15785 = arguments.length;
-var i__5727__auto___15786 = (0);
+var len__5726__auto___15771 = arguments.length;
+var i__5727__auto___15772 = (0);
 while(true){
-if((i__5727__auto___15786 < len__5726__auto___15785)){
-args__5732__auto__.push((arguments[i__5727__auto___15786]));
+if((i__5727__auto___15772 < len__5726__auto___15771)){
+args__5732__auto__.push((arguments[i__5727__auto___15772]));
 
-var G__15787 = (i__5727__auto___15786 + (1));
-i__5727__auto___15786 = G__15787;
+var G__15774 = (i__5727__auto___15772 + (1));
+i__5727__auto___15772 = G__15774;
 continue;
 } else {
 }
@@ -459,19 +459,19 @@ return cljs.spec.gen.alpha.vector_distinct.cljs$core$IFn$_invoke$arity$variadic(
 });
 
 (cljs.spec.gen.alpha.vector_distinct.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15782),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15763),args);
 }));
 
 (cljs.spec.gen.alpha.vector_distinct.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.vector_distinct.cljs$lang$applyTo = (function (seq14859){
+(cljs.spec.gen.alpha.vector_distinct.cljs$lang$applyTo = (function (seq15007){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14859));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15007));
 }));
 
 
-var g__11604__auto___15788 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15775 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.fmap !== 'undefined')){
 return clojure.test.check.generators.fmap;
 } else {
@@ -483,14 +483,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.fmap = (function cljs$spec$gen$alpha$fmap(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15791 = arguments.length;
-var i__5727__auto___15792 = (0);
+var len__5726__auto___15777 = arguments.length;
+var i__5727__auto___15778 = (0);
 while(true){
-if((i__5727__auto___15792 < len__5726__auto___15791)){
-args__5732__auto__.push((arguments[i__5727__auto___15792]));
+if((i__5727__auto___15778 < len__5726__auto___15777)){
+args__5732__auto__.push((arguments[i__5727__auto___15778]));
 
-var G__15794 = (i__5727__auto___15792 + (1));
-i__5727__auto___15792 = G__15794;
+var G__15780 = (i__5727__auto___15778 + (1));
+i__5727__auto___15778 = G__15780;
 continue;
 } else {
 }
@@ -502,19 +502,19 @@ return cljs.spec.gen.alpha.fmap.cljs$core$IFn$_invoke$arity$variadic(argseq__573
 });
 
 (cljs.spec.gen.alpha.fmap.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15788),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15775),args);
 }));
 
 (cljs.spec.gen.alpha.fmap.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.fmap.cljs$lang$applyTo = (function (seq14873){
+(cljs.spec.gen.alpha.fmap.cljs$lang$applyTo = (function (seq15025){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14873));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15025));
 }));
 
 
-var g__11604__auto___15796 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15781 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.elements !== 'undefined')){
 return clojure.test.check.generators.elements;
 } else {
@@ -526,14 +526,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.elements = (function cljs$spec$gen$alpha$elements(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15804 = arguments.length;
-var i__5727__auto___15806 = (0);
+var len__5726__auto___15787 = arguments.length;
+var i__5727__auto___15788 = (0);
 while(true){
-if((i__5727__auto___15806 < len__5726__auto___15804)){
-args__5732__auto__.push((arguments[i__5727__auto___15806]));
+if((i__5727__auto___15788 < len__5726__auto___15787)){
+args__5732__auto__.push((arguments[i__5727__auto___15788]));
 
-var G__15807 = (i__5727__auto___15806 + (1));
-i__5727__auto___15806 = G__15807;
+var G__15791 = (i__5727__auto___15788 + (1));
+i__5727__auto___15788 = G__15791;
 continue;
 } else {
 }
@@ -545,19 +545,19 @@ return cljs.spec.gen.alpha.elements.cljs$core$IFn$_invoke$arity$variadic(argseq_
 });
 
 (cljs.spec.gen.alpha.elements.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15796),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15781),args);
 }));
 
 (cljs.spec.gen.alpha.elements.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.elements.cljs$lang$applyTo = (function (seq14897){
+(cljs.spec.gen.alpha.elements.cljs$lang$applyTo = (function (seq15032){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14897));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15032));
 }));
 
 
-var g__11604__auto___15808 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15805 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.bind !== 'undefined')){
 return clojure.test.check.generators.bind;
 } else {
@@ -569,14 +569,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.bind = (function cljs$spec$gen$alpha$bind(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15813 = arguments.length;
-var i__5727__auto___15814 = (0);
+var len__5726__auto___15806 = arguments.length;
+var i__5727__auto___15807 = (0);
 while(true){
-if((i__5727__auto___15814 < len__5726__auto___15813)){
-args__5732__auto__.push((arguments[i__5727__auto___15814]));
+if((i__5727__auto___15807 < len__5726__auto___15806)){
+args__5732__auto__.push((arguments[i__5727__auto___15807]));
 
-var G__15816 = (i__5727__auto___15814 + (1));
-i__5727__auto___15814 = G__15816;
+var G__15808 = (i__5727__auto___15807 + (1));
+i__5727__auto___15807 = G__15808;
 continue;
 } else {
 }
@@ -588,19 +588,19 @@ return cljs.spec.gen.alpha.bind.cljs$core$IFn$_invoke$arity$variadic(argseq__573
 });
 
 (cljs.spec.gen.alpha.bind.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15808),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15805),args);
 }));
 
 (cljs.spec.gen.alpha.bind.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.bind.cljs$lang$applyTo = (function (seq14910){
+(cljs.spec.gen.alpha.bind.cljs$lang$applyTo = (function (seq15041){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14910));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15041));
 }));
 
 
-var g__11604__auto___15819 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15809 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.choose !== 'undefined')){
 return clojure.test.check.generators.choose;
 } else {
@@ -612,14 +612,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.choose = (function cljs$spec$gen$alpha$choose(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15821 = arguments.length;
-var i__5727__auto___15822 = (0);
+var len__5726__auto___15820 = arguments.length;
+var i__5727__auto___15821 = (0);
 while(true){
-if((i__5727__auto___15822 < len__5726__auto___15821)){
-args__5732__auto__.push((arguments[i__5727__auto___15822]));
+if((i__5727__auto___15821 < len__5726__auto___15820)){
+args__5732__auto__.push((arguments[i__5727__auto___15821]));
 
-var G__15823 = (i__5727__auto___15822 + (1));
-i__5727__auto___15822 = G__15823;
+var G__15825 = (i__5727__auto___15821 + (1));
+i__5727__auto___15821 = G__15825;
 continue;
 } else {
 }
@@ -631,19 +631,19 @@ return cljs.spec.gen.alpha.choose.cljs$core$IFn$_invoke$arity$variadic(argseq__5
 });
 
 (cljs.spec.gen.alpha.choose.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15819),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15809),args);
 }));
 
 (cljs.spec.gen.alpha.choose.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.choose.cljs$lang$applyTo = (function (seq14923){
+(cljs.spec.gen.alpha.choose.cljs$lang$applyTo = (function (seq15044){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14923));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15044));
 }));
 
 
-var g__11604__auto___15828 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15841 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.one_of !== 'undefined')){
 return clojure.test.check.generators.one_of;
 } else {
@@ -655,14 +655,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.one_of = (function cljs$spec$gen$alpha$one_of(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15843 = arguments.length;
-var i__5727__auto___15844 = (0);
+var len__5726__auto___15860 = arguments.length;
+var i__5727__auto___15861 = (0);
 while(true){
-if((i__5727__auto___15844 < len__5726__auto___15843)){
-args__5732__auto__.push((arguments[i__5727__auto___15844]));
+if((i__5727__auto___15861 < len__5726__auto___15860)){
+args__5732__auto__.push((arguments[i__5727__auto___15861]));
 
-var G__15853 = (i__5727__auto___15844 + (1));
-i__5727__auto___15844 = G__15853;
+var G__15863 = (i__5727__auto___15861 + (1));
+i__5727__auto___15861 = G__15863;
 continue;
 } else {
 }
@@ -674,19 +674,19 @@ return cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(argseq__5
 });
 
 (cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15828),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15841),args);
 }));
 
 (cljs.spec.gen.alpha.one_of.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.one_of.cljs$lang$applyTo = (function (seq14938){
+(cljs.spec.gen.alpha.one_of.cljs$lang$applyTo = (function (seq15060){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14938));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15060));
 }));
 
 
-var g__11604__auto___15879 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15883 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.such_that !== 'undefined')){
 return clojure.test.check.generators.such_that;
 } else {
@@ -698,14 +698,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.such_that = (function cljs$spec$gen$alpha$such_that(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15881 = arguments.length;
-var i__5727__auto___15882 = (0);
+var len__5726__auto___15904 = arguments.length;
+var i__5727__auto___15905 = (0);
 while(true){
-if((i__5727__auto___15882 < len__5726__auto___15881)){
-args__5732__auto__.push((arguments[i__5727__auto___15882]));
+if((i__5727__auto___15905 < len__5726__auto___15904)){
+args__5732__auto__.push((arguments[i__5727__auto___15905]));
 
-var G__15883 = (i__5727__auto___15882 + (1));
-i__5727__auto___15882 = G__15883;
+var G__15906 = (i__5727__auto___15905 + (1));
+i__5727__auto___15905 = G__15906;
 continue;
 } else {
 }
@@ -717,19 +717,19 @@ return cljs.spec.gen.alpha.such_that.cljs$core$IFn$_invoke$arity$variadic(argseq
 });
 
 (cljs.spec.gen.alpha.such_that.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15879),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15883),args);
 }));
 
 (cljs.spec.gen.alpha.such_that.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.such_that.cljs$lang$applyTo = (function (seq14950){
+(cljs.spec.gen.alpha.such_that.cljs$lang$applyTo = (function (seq15070){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14950));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15070));
 }));
 
 
-var g__11604__auto___15885 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15907 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.tuple !== 'undefined')){
 return clojure.test.check.generators.tuple;
 } else {
@@ -741,14 +741,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.tuple = (function cljs$spec$gen$alpha$tuple(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15886 = arguments.length;
-var i__5727__auto___15887 = (0);
+var len__5726__auto___15909 = arguments.length;
+var i__5727__auto___15910 = (0);
 while(true){
-if((i__5727__auto___15887 < len__5726__auto___15886)){
-args__5732__auto__.push((arguments[i__5727__auto___15887]));
+if((i__5727__auto___15910 < len__5726__auto___15909)){
+args__5732__auto__.push((arguments[i__5727__auto___15910]));
 
-var G__15889 = (i__5727__auto___15887 + (1));
-i__5727__auto___15887 = G__15889;
+var G__15912 = (i__5727__auto___15910 + (1));
+i__5727__auto___15910 = G__15912;
 continue;
 } else {
 }
@@ -760,19 +760,19 @@ return cljs.spec.gen.alpha.tuple.cljs$core$IFn$_invoke$arity$variadic(argseq__57
 });
 
 (cljs.spec.gen.alpha.tuple.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15885),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15907),args);
 }));
 
 (cljs.spec.gen.alpha.tuple.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.tuple.cljs$lang$applyTo = (function (seq14960){
+(cljs.spec.gen.alpha.tuple.cljs$lang$applyTo = (function (seq15098){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14960));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15098));
 }));
 
 
-var g__11604__auto___15892 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15914 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.sample !== 'undefined')){
 return clojure.test.check.generators.sample;
 } else {
@@ -784,14 +784,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.sample = (function cljs$spec$gen$alpha$sample(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15894 = arguments.length;
-var i__5727__auto___15895 = (0);
+var len__5726__auto___15917 = arguments.length;
+var i__5727__auto___15918 = (0);
 while(true){
-if((i__5727__auto___15895 < len__5726__auto___15894)){
-args__5732__auto__.push((arguments[i__5727__auto___15895]));
+if((i__5727__auto___15918 < len__5726__auto___15917)){
+args__5732__auto__.push((arguments[i__5727__auto___15918]));
 
-var G__15903 = (i__5727__auto___15895 + (1));
-i__5727__auto___15895 = G__15903;
+var G__15919 = (i__5727__auto___15918 + (1));
+i__5727__auto___15918 = G__15919;
 continue;
 } else {
 }
@@ -803,19 +803,19 @@ return cljs.spec.gen.alpha.sample.cljs$core$IFn$_invoke$arity$variadic(argseq__5
 });
 
 (cljs.spec.gen.alpha.sample.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15892),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15914),args);
 }));
 
 (cljs.spec.gen.alpha.sample.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.sample.cljs$lang$applyTo = (function (seq14978){
+(cljs.spec.gen.alpha.sample.cljs$lang$applyTo = (function (seq15127){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14978));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15127));
 }));
 
 
-var g__11604__auto___15907 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15931 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.return$ !== 'undefined')){
 return clojure.test.check.generators.return$;
 } else {
@@ -826,135 +826,6 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  * Lazy loaded version of clojure.test.check.generators/return
  */
 cljs.spec.gen.alpha.return$ = (function cljs$spec$gen$alpha$return(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15911 = arguments.length;
-var i__5727__auto___15912 = (0);
-while(true){
-if((i__5727__auto___15912 < len__5726__auto___15911)){
-args__5732__auto__.push((arguments[i__5727__auto___15912]));
-
-var G__15913 = (i__5727__auto___15912 + (1));
-i__5727__auto___15912 = G__15913;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15907),args);
-}));
-
-(cljs.spec.gen.alpha.return$.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.return$.cljs$lang$applyTo = (function (seq14994){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14994));
-}));
-
-
-var g__11604__auto___15914 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.large_integer_STAR_ !== 'undefined')){
-return clojure.test.check.generators.large_integer_STAR_;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","large-integer*","clojure.test.check.generators/large-integer*",-437830670,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","large-integer*","clojure.test.check.generators/large-integer*",-437830670,null))," never required"].join('')));
-}
-}),null));
-/**
- * Lazy loaded version of clojure.test.check.generators/large-integer*
- */
-cljs.spec.gen.alpha.large_integer_STAR_ = (function cljs$spec$gen$alpha$large_integer_STAR_(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15919 = arguments.length;
-var i__5727__auto___15921 = (0);
-while(true){
-if((i__5727__auto___15921 < len__5726__auto___15919)){
-args__5732__auto__.push((arguments[i__5727__auto___15921]));
-
-var G__15922 = (i__5727__auto___15921 + (1));
-i__5727__auto___15921 = G__15922;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.large_integer_STAR_.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.large_integer_STAR_.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15914),args);
-}));
-
-(cljs.spec.gen.alpha.large_integer_STAR_.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.large_integer_STAR_.cljs$lang$applyTo = (function (seq14999){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq14999));
-}));
-
-
-var g__11604__auto___15924 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.double_STAR_ !== 'undefined')){
-return clojure.test.check.generators.double_STAR_;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","double*","clojure.test.check.generators/double*",841542265,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","double*","clojure.test.check.generators/double*",841542265,null))," never required"].join('')));
-}
-}),null));
-/**
- * Lazy loaded version of clojure.test.check.generators/double*
- */
-cljs.spec.gen.alpha.double_STAR_ = (function cljs$spec$gen$alpha$double_STAR_(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15928 = arguments.length;
-var i__5727__auto___15929 = (0);
-while(true){
-if((i__5727__auto___15929 < len__5726__auto___15928)){
-args__5732__auto__.push((arguments[i__5727__auto___15929]));
-
-var G__15930 = (i__5727__auto___15929 + (1));
-i__5727__auto___15929 = G__15930;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.double_STAR_.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.double_STAR_.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15924),args);
-}));
-
-(cljs.spec.gen.alpha.double_STAR_.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.double_STAR_.cljs$lang$applyTo = (function (seq15024){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15024));
-}));
-
-
-var g__11604__auto___15935 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.frequency !== 'undefined')){
-return clojure.test.check.generators.frequency;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","frequency","clojure.test.check.generators/frequency",2090703177,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","frequency","clojure.test.check.generators/frequency",2090703177,null))," never required"].join('')));
-}
-}),null));
-/**
- * Lazy loaded version of clojure.test.check.generators/frequency
- */
-cljs.spec.gen.alpha.frequency = (function cljs$spec$gen$alpha$frequency(var_args){
 var args__5732__auto__ = [];
 var len__5726__auto___15938 = arguments.length;
 var i__5727__auto___15939 = (0);
@@ -971,23 +842,152 @@ break;
 }
 
 var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15931),args);
+}));
+
+(cljs.spec.gen.alpha.return$.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.return$.cljs$lang$applyTo = (function (seq15139){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15139));
+}));
+
+
+var g__11604__auto___15951 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.large_integer_STAR_ !== 'undefined')){
+return clojure.test.check.generators.large_integer_STAR_;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","large-integer*","clojure.test.check.generators/large-integer*",-437830670,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","large-integer*","clojure.test.check.generators/large-integer*",-437830670,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Lazy loaded version of clojure.test.check.generators/large-integer*
+ */
+cljs.spec.gen.alpha.large_integer_STAR_ = (function cljs$spec$gen$alpha$large_integer_STAR_(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___15957 = arguments.length;
+var i__5727__auto___15958 = (0);
+while(true){
+if((i__5727__auto___15958 < len__5726__auto___15957)){
+args__5732__auto__.push((arguments[i__5727__auto___15958]));
+
+var G__15959 = (i__5727__auto___15958 + (1));
+i__5727__auto___15958 = G__15959;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.large_integer_STAR_.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.large_integer_STAR_.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15951),args);
+}));
+
+(cljs.spec.gen.alpha.large_integer_STAR_.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.large_integer_STAR_.cljs$lang$applyTo = (function (seq15148){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15148));
+}));
+
+
+var g__11604__auto___15961 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.double_STAR_ !== 'undefined')){
+return clojure.test.check.generators.double_STAR_;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","double*","clojure.test.check.generators/double*",841542265,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","double*","clojure.test.check.generators/double*",841542265,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Lazy loaded version of clojure.test.check.generators/double*
+ */
+cljs.spec.gen.alpha.double_STAR_ = (function cljs$spec$gen$alpha$double_STAR_(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___15964 = arguments.length;
+var i__5727__auto___15965 = (0);
+while(true){
+if((i__5727__auto___15965 < len__5726__auto___15964)){
+args__5732__auto__.push((arguments[i__5727__auto___15965]));
+
+var G__15966 = (i__5727__auto___15965 + (1));
+i__5727__auto___15965 = G__15966;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.double_STAR_.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.double_STAR_.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15961),args);
+}));
+
+(cljs.spec.gen.alpha.double_STAR_.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.double_STAR_.cljs$lang$applyTo = (function (seq15163){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15163));
+}));
+
+
+var g__11604__auto___15967 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.frequency !== 'undefined')){
+return clojure.test.check.generators.frequency;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","frequency","clojure.test.check.generators/frequency",2090703177,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","frequency","clojure.test.check.generators/frequency",2090703177,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Lazy loaded version of clojure.test.check.generators/frequency
+ */
+cljs.spec.gen.alpha.frequency = (function cljs$spec$gen$alpha$frequency(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___15970 = arguments.length;
+var i__5727__auto___15971 = (0);
+while(true){
+if((i__5727__auto___15971 < len__5726__auto___15970)){
+args__5732__auto__.push((arguments[i__5727__auto___15971]));
+
+var G__15973 = (i__5727__auto___15971 + (1));
+i__5727__auto___15971 = G__15973;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
 return cljs.spec.gen.alpha.frequency.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
 });
 
 (cljs.spec.gen.alpha.frequency.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15935),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15967),args);
 }));
 
 (cljs.spec.gen.alpha.frequency.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.frequency.cljs$lang$applyTo = (function (seq15031){
+(cljs.spec.gen.alpha.frequency.cljs$lang$applyTo = (function (seq15181){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15031));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15181));
 }));
 
 
-var g__11604__auto___15946 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11604__auto___15976 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.shuffle !== 'undefined')){
 return clojure.test.check.generators.shuffle;
 } else {
@@ -999,14 +999,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.shuffle = (function cljs$spec$gen$alpha$shuffle(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___15950 = arguments.length;
-var i__5727__auto___15951 = (0);
+var len__5726__auto___15982 = arguments.length;
+var i__5727__auto___15983 = (0);
 while(true){
-if((i__5727__auto___15951 < len__5726__auto___15950)){
-args__5732__auto__.push((arguments[i__5727__auto___15951]));
+if((i__5727__auto___15983 < len__5726__auto___15982)){
+args__5732__auto__.push((arguments[i__5727__auto___15983]));
 
-var G__15953 = (i__5727__auto___15951 + (1));
-i__5727__auto___15951 = G__15953;
+var G__15988 = (i__5727__auto___15983 + (1));
+i__5727__auto___15983 = G__15988;
 continue;
 } else {
 }
@@ -1018,18 +1018,18 @@ return cljs.spec.gen.alpha.shuffle.cljs$core$IFn$_invoke$arity$variadic(argseq__
 });
 
 (cljs.spec.gen.alpha.shuffle.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15946),args);
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.deref(g__11604__auto___15976),args);
 }));
 
 (cljs.spec.gen.alpha.shuffle.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.shuffle.cljs$lang$applyTo = (function (seq15041){
+(cljs.spec.gen.alpha.shuffle.cljs$lang$applyTo = (function (seq15205){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15041));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15205));
 }));
 
-var g__11609__auto___15956 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___15994 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.any !== 'undefined')){
 return clojure.test.check.generators.any;
 } else {
@@ -1040,307 +1040,6 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  * Fn returning clojure.test.check.generators/any
  */
 cljs.spec.gen.alpha.any = (function cljs$spec$gen$alpha$any(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15961 = arguments.length;
-var i__5727__auto___15962 = (0);
-while(true){
-if((i__5727__auto___15962 < len__5726__auto___15961)){
-args__5732__auto__.push((arguments[i__5727__auto___15962]));
-
-var G__15963 = (i__5727__auto___15962 + (1));
-i__5727__auto___15962 = G__15963;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.any.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.any.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___15956);
-}));
-
-(cljs.spec.gen.alpha.any.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.any.cljs$lang$applyTo = (function (seq15063){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15063));
-}));
-
-
-var g__11609__auto___15964 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.any_printable !== 'undefined')){
-return clojure.test.check.generators.any_printable;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","any-printable","clojure.test.check.generators/any-printable",-1570493991,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","any-printable","clojure.test.check.generators/any-printable",-1570493991,null))," never required"].join('')));
-}
-}),null));
-/**
- * Fn returning clojure.test.check.generators/any-printable
- */
-cljs.spec.gen.alpha.any_printable = (function cljs$spec$gen$alpha$any_printable(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15966 = arguments.length;
-var i__5727__auto___15967 = (0);
-while(true){
-if((i__5727__auto___15967 < len__5726__auto___15966)){
-args__5732__auto__.push((arguments[i__5727__auto___15967]));
-
-var G__15968 = (i__5727__auto___15967 + (1));
-i__5727__auto___15967 = G__15968;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.any_printable.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.any_printable.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___15964);
-}));
-
-(cljs.spec.gen.alpha.any_printable.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.any_printable.cljs$lang$applyTo = (function (seq15070){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15070));
-}));
-
-
-var g__11609__auto___15970 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.boolean$ !== 'undefined')){
-return clojure.test.check.generators.boolean$;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","boolean","clojure.test.check.generators/boolean",1586992347,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","boolean","clojure.test.check.generators/boolean",1586992347,null))," never required"].join('')));
-}
-}),null));
-/**
- * Fn returning clojure.test.check.generators/boolean
- */
-cljs.spec.gen.alpha.boolean$ = (function cljs$spec$gen$alpha$boolean(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15971 = arguments.length;
-var i__5727__auto___15972 = (0);
-while(true){
-if((i__5727__auto___15972 < len__5726__auto___15971)){
-args__5732__auto__.push((arguments[i__5727__auto___15972]));
-
-var G__15973 = (i__5727__auto___15972 + (1));
-i__5727__auto___15972 = G__15973;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.boolean$.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.boolean$.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___15970);
-}));
-
-(cljs.spec.gen.alpha.boolean$.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.boolean$.cljs$lang$applyTo = (function (seq15078){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15078));
-}));
-
-
-var g__11609__auto___15974 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.char$ !== 'undefined')){
-return clojure.test.check.generators.char$;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","char","clojure.test.check.generators/char",-1426343459,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","char","clojure.test.check.generators/char",-1426343459,null))," never required"].join('')));
-}
-}),null));
-/**
- * Fn returning clojure.test.check.generators/char
- */
-cljs.spec.gen.alpha.char$ = (function cljs$spec$gen$alpha$char(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15975 = arguments.length;
-var i__5727__auto___15976 = (0);
-while(true){
-if((i__5727__auto___15976 < len__5726__auto___15975)){
-args__5732__auto__.push((arguments[i__5727__auto___15976]));
-
-var G__15977 = (i__5727__auto___15976 + (1));
-i__5727__auto___15976 = G__15977;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.char$.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.char$.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___15974);
-}));
-
-(cljs.spec.gen.alpha.char$.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.char$.cljs$lang$applyTo = (function (seq15087){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15087));
-}));
-
-
-var g__11609__auto___15980 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.char_alpha !== 'undefined')){
-return clojure.test.check.generators.char_alpha;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","char-alpha","clojure.test.check.generators/char-alpha",615785796,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","char-alpha","clojure.test.check.generators/char-alpha",615785796,null))," never required"].join('')));
-}
-}),null));
-/**
- * Fn returning clojure.test.check.generators/char-alpha
- */
-cljs.spec.gen.alpha.char_alpha = (function cljs$spec$gen$alpha$char_alpha(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15981 = arguments.length;
-var i__5727__auto___15982 = (0);
-while(true){
-if((i__5727__auto___15982 < len__5726__auto___15981)){
-args__5732__auto__.push((arguments[i__5727__auto___15982]));
-
-var G__15983 = (i__5727__auto___15982 + (1));
-i__5727__auto___15982 = G__15983;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.char_alpha.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.char_alpha.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___15980);
-}));
-
-(cljs.spec.gen.alpha.char_alpha.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.char_alpha.cljs$lang$applyTo = (function (seq15094){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15094));
-}));
-
-
-var g__11609__auto___15984 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.char_alphanumeric !== 'undefined')){
-return clojure.test.check.generators.char_alphanumeric;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","char-alphanumeric","clojure.test.check.generators/char-alphanumeric",1383091431,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","char-alphanumeric","clojure.test.check.generators/char-alphanumeric",1383091431,null))," never required"].join('')));
-}
-}),null));
-/**
- * Fn returning clojure.test.check.generators/char-alphanumeric
- */
-cljs.spec.gen.alpha.char_alphanumeric = (function cljs$spec$gen$alpha$char_alphanumeric(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15986 = arguments.length;
-var i__5727__auto___15988 = (0);
-while(true){
-if((i__5727__auto___15988 < len__5726__auto___15986)){
-args__5732__auto__.push((arguments[i__5727__auto___15988]));
-
-var G__15989 = (i__5727__auto___15988 + (1));
-i__5727__auto___15988 = G__15989;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.char_alphanumeric.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.char_alphanumeric.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___15984);
-}));
-
-(cljs.spec.gen.alpha.char_alphanumeric.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.char_alphanumeric.cljs$lang$applyTo = (function (seq15098){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15098));
-}));
-
-
-var g__11609__auto___15991 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.char_ascii !== 'undefined')){
-return clojure.test.check.generators.char_ascii;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","char-ascii","clojure.test.check.generators/char-ascii",-899908538,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","char-ascii","clojure.test.check.generators/char-ascii",-899908538,null))," never required"].join('')));
-}
-}),null));
-/**
- * Fn returning clojure.test.check.generators/char-ascii
- */
-cljs.spec.gen.alpha.char_ascii = (function cljs$spec$gen$alpha$char_ascii(var_args){
-var args__5732__auto__ = [];
-var len__5726__auto___15993 = arguments.length;
-var i__5727__auto___15994 = (0);
-while(true){
-if((i__5727__auto___15994 < len__5726__auto___15993)){
-args__5732__auto__.push((arguments[i__5727__auto___15994]));
-
-var G__15995 = (i__5727__auto___15994 + (1));
-i__5727__auto___15994 = G__15995;
-continue;
-} else {
-}
-break;
-}
-
-var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
-return cljs.spec.gen.alpha.char_ascii.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
-});
-
-(cljs.spec.gen.alpha.char_ascii.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___15991);
-}));
-
-(cljs.spec.gen.alpha.char_ascii.cljs$lang$maxFixedArity = (0));
-
-/** @this {Function} */
-(cljs.spec.gen.alpha.char_ascii.cljs$lang$applyTo = (function (seq15109){
-var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15109));
-}));
-
-
-var g__11609__auto___15996 = (new cljs.spec.gen.alpha.LazyVar((function (){
-if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.double$ !== 'undefined')){
-return clojure.test.check.generators.double$;
-} else {
-throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","double","clojure.test.check.generators/double",668331090,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","double","clojure.test.check.generators/double",668331090,null))," never required"].join('')));
-}
-}),null));
-/**
- * Fn returning clojure.test.check.generators/double
- */
-cljs.spec.gen.alpha.double$ = (function cljs$spec$gen$alpha$double(var_args){
 var args__5732__auto__ = [];
 var len__5726__auto___15997 = arguments.length;
 var i__5727__auto___15998 = (0);
@@ -1357,23 +1056,324 @@ break;
 }
 
 var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.any.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.any.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.deref(g__11609__auto___15994);
+}));
+
+(cljs.spec.gen.alpha.any.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.any.cljs$lang$applyTo = (function (seq15212){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15212));
+}));
+
+
+var g__11609__auto___16003 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.any_printable !== 'undefined')){
+return clojure.test.check.generators.any_printable;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","any-printable","clojure.test.check.generators/any-printable",-1570493991,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","any-printable","clojure.test.check.generators/any-printable",-1570493991,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Fn returning clojure.test.check.generators/any-printable
+ */
+cljs.spec.gen.alpha.any_printable = (function cljs$spec$gen$alpha$any_printable(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___16006 = arguments.length;
+var i__5727__auto___16008 = (0);
+while(true){
+if((i__5727__auto___16008 < len__5726__auto___16006)){
+args__5732__auto__.push((arguments[i__5727__auto___16008]));
+
+var G__16009 = (i__5727__auto___16008 + (1));
+i__5727__auto___16008 = G__16009;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.any_printable.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.any_printable.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.deref(g__11609__auto___16003);
+}));
+
+(cljs.spec.gen.alpha.any_printable.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.any_printable.cljs$lang$applyTo = (function (seq15218){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15218));
+}));
+
+
+var g__11609__auto___16014 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.boolean$ !== 'undefined')){
+return clojure.test.check.generators.boolean$;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","boolean","clojure.test.check.generators/boolean",1586992347,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","boolean","clojure.test.check.generators/boolean",1586992347,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Fn returning clojure.test.check.generators/boolean
+ */
+cljs.spec.gen.alpha.boolean$ = (function cljs$spec$gen$alpha$boolean(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___16026 = arguments.length;
+var i__5727__auto___16028 = (0);
+while(true){
+if((i__5727__auto___16028 < len__5726__auto___16026)){
+args__5732__auto__.push((arguments[i__5727__auto___16028]));
+
+var G__16029 = (i__5727__auto___16028 + (1));
+i__5727__auto___16028 = G__16029;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.boolean$.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.boolean$.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.deref(g__11609__auto___16014);
+}));
+
+(cljs.spec.gen.alpha.boolean$.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.boolean$.cljs$lang$applyTo = (function (seq15228){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15228));
+}));
+
+
+var g__11609__auto___16031 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.char$ !== 'undefined')){
+return clojure.test.check.generators.char$;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","char","clojure.test.check.generators/char",-1426343459,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","char","clojure.test.check.generators/char",-1426343459,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Fn returning clojure.test.check.generators/char
+ */
+cljs.spec.gen.alpha.char$ = (function cljs$spec$gen$alpha$char(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___16035 = arguments.length;
+var i__5727__auto___16036 = (0);
+while(true){
+if((i__5727__auto___16036 < len__5726__auto___16035)){
+args__5732__auto__.push((arguments[i__5727__auto___16036]));
+
+var G__16038 = (i__5727__auto___16036 + (1));
+i__5727__auto___16036 = G__16038;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.char$.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.char$.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.deref(g__11609__auto___16031);
+}));
+
+(cljs.spec.gen.alpha.char$.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.char$.cljs$lang$applyTo = (function (seq15243){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15243));
+}));
+
+
+var g__11609__auto___16054 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.char_alpha !== 'undefined')){
+return clojure.test.check.generators.char_alpha;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","char-alpha","clojure.test.check.generators/char-alpha",615785796,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","char-alpha","clojure.test.check.generators/char-alpha",615785796,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Fn returning clojure.test.check.generators/char-alpha
+ */
+cljs.spec.gen.alpha.char_alpha = (function cljs$spec$gen$alpha$char_alpha(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___16062 = arguments.length;
+var i__5727__auto___16063 = (0);
+while(true){
+if((i__5727__auto___16063 < len__5726__auto___16062)){
+args__5732__auto__.push((arguments[i__5727__auto___16063]));
+
+var G__16064 = (i__5727__auto___16063 + (1));
+i__5727__auto___16063 = G__16064;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.char_alpha.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.char_alpha.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.deref(g__11609__auto___16054);
+}));
+
+(cljs.spec.gen.alpha.char_alpha.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.char_alpha.cljs$lang$applyTo = (function (seq15266){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15266));
+}));
+
+
+var g__11609__auto___16065 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.char_alphanumeric !== 'undefined')){
+return clojure.test.check.generators.char_alphanumeric;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","char-alphanumeric","clojure.test.check.generators/char-alphanumeric",1383091431,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","char-alphanumeric","clojure.test.check.generators/char-alphanumeric",1383091431,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Fn returning clojure.test.check.generators/char-alphanumeric
+ */
+cljs.spec.gen.alpha.char_alphanumeric = (function cljs$spec$gen$alpha$char_alphanumeric(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___16069 = arguments.length;
+var i__5727__auto___16070 = (0);
+while(true){
+if((i__5727__auto___16070 < len__5726__auto___16069)){
+args__5732__auto__.push((arguments[i__5727__auto___16070]));
+
+var G__16071 = (i__5727__auto___16070 + (1));
+i__5727__auto___16070 = G__16071;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.char_alphanumeric.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.char_alphanumeric.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.deref(g__11609__auto___16065);
+}));
+
+(cljs.spec.gen.alpha.char_alphanumeric.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.char_alphanumeric.cljs$lang$applyTo = (function (seq15269){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15269));
+}));
+
+
+var g__11609__auto___16073 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.char_ascii !== 'undefined')){
+return clojure.test.check.generators.char_ascii;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","char-ascii","clojure.test.check.generators/char-ascii",-899908538,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","char-ascii","clojure.test.check.generators/char-ascii",-899908538,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Fn returning clojure.test.check.generators/char-ascii
+ */
+cljs.spec.gen.alpha.char_ascii = (function cljs$spec$gen$alpha$char_ascii(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___16078 = arguments.length;
+var i__5727__auto___16080 = (0);
+while(true){
+if((i__5727__auto___16080 < len__5726__auto___16078)){
+args__5732__auto__.push((arguments[i__5727__auto___16080]));
+
+var G__16081 = (i__5727__auto___16080 + (1));
+i__5727__auto___16080 = G__16081;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
+return cljs.spec.gen.alpha.char_ascii.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
+});
+
+(cljs.spec.gen.alpha.char_ascii.cljs$core$IFn$_invoke$arity$variadic = (function (args){
+return cljs.core.deref(g__11609__auto___16073);
+}));
+
+(cljs.spec.gen.alpha.char_ascii.cljs$lang$maxFixedArity = (0));
+
+/** @this {Function} */
+(cljs.spec.gen.alpha.char_ascii.cljs$lang$applyTo = (function (seq15283){
+var self__5712__auto__ = this;
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15283));
+}));
+
+
+var g__11609__auto___16084 = (new cljs.spec.gen.alpha.LazyVar((function (){
+if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.double$ !== 'undefined')){
+return clojure.test.check.generators.double$;
+} else {
+throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.core.Symbol("clojure.test.check.generators","double","clojure.test.check.generators/double",668331090,null))," does not exist, ",cljs.core.namespace(new cljs.core.Symbol("clojure.test.check.generators","double","clojure.test.check.generators/double",668331090,null))," never required"].join('')));
+}
+}),null));
+/**
+ * Fn returning clojure.test.check.generators/double
+ */
+cljs.spec.gen.alpha.double$ = (function cljs$spec$gen$alpha$double(var_args){
+var args__5732__auto__ = [];
+var len__5726__auto___16090 = arguments.length;
+var i__5727__auto___16092 = (0);
+while(true){
+if((i__5727__auto___16092 < len__5726__auto___16090)){
+args__5732__auto__.push((arguments[i__5727__auto___16092]));
+
+var G__16093 = (i__5727__auto___16092 + (1));
+i__5727__auto___16092 = G__16093;
+continue;
+} else {
+}
+break;
+}
+
+var argseq__5733__auto__ = ((((0) < args__5732__auto__.length))?(new cljs.core.IndexedSeq(args__5732__auto__.slice((0)),(0),null)):null);
 return cljs.spec.gen.alpha.double$.cljs$core$IFn$_invoke$arity$variadic(argseq__5733__auto__);
 });
 
 (cljs.spec.gen.alpha.double$.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___15996);
+return cljs.core.deref(g__11609__auto___16084);
 }));
 
 (cljs.spec.gen.alpha.double$.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.double$.cljs$lang$applyTo = (function (seq15122){
+(cljs.spec.gen.alpha.double$.cljs$lang$applyTo = (function (seq15291){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15122));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15291));
 }));
 
 
-var g__11609__auto___16000 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16095 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.int$ !== 'undefined')){
 return clojure.test.check.generators.int$;
 } else {
@@ -1385,14 +1385,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.int$ = (function cljs$spec$gen$alpha$int(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16002 = arguments.length;
-var i__5727__auto___16003 = (0);
+var len__5726__auto___16097 = arguments.length;
+var i__5727__auto___16098 = (0);
 while(true){
-if((i__5727__auto___16003 < len__5726__auto___16002)){
-args__5732__auto__.push((arguments[i__5727__auto___16003]));
+if((i__5727__auto___16098 < len__5726__auto___16097)){
+args__5732__auto__.push((arguments[i__5727__auto___16098]));
 
-var G__16004 = (i__5727__auto___16003 + (1));
-i__5727__auto___16003 = G__16004;
+var G__16099 = (i__5727__auto___16098 + (1));
+i__5727__auto___16098 = G__16099;
 continue;
 } else {
 }
@@ -1404,19 +1404,19 @@ return cljs.spec.gen.alpha.int$.cljs$core$IFn$_invoke$arity$variadic(argseq__573
 });
 
 (cljs.spec.gen.alpha.int$.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16000);
+return cljs.core.deref(g__11609__auto___16095);
 }));
 
 (cljs.spec.gen.alpha.int$.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.int$.cljs$lang$applyTo = (function (seq15132){
+(cljs.spec.gen.alpha.int$.cljs$lang$applyTo = (function (seq15318){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15132));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15318));
 }));
 
 
-var g__11609__auto___16007 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16103 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.keyword !== 'undefined')){
 return clojure.test.check.generators.keyword;
 } else {
@@ -1428,14 +1428,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.keyword = (function cljs$spec$gen$alpha$keyword(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16008 = arguments.length;
-var i__5727__auto___16009 = (0);
+var len__5726__auto___16113 = arguments.length;
+var i__5727__auto___16114 = (0);
 while(true){
-if((i__5727__auto___16009 < len__5726__auto___16008)){
-args__5732__auto__.push((arguments[i__5727__auto___16009]));
+if((i__5727__auto___16114 < len__5726__auto___16113)){
+args__5732__auto__.push((arguments[i__5727__auto___16114]));
 
-var G__16011 = (i__5727__auto___16009 + (1));
-i__5727__auto___16009 = G__16011;
+var G__16115 = (i__5727__auto___16114 + (1));
+i__5727__auto___16114 = G__16115;
 continue;
 } else {
 }
@@ -1447,19 +1447,19 @@ return cljs.spec.gen.alpha.keyword.cljs$core$IFn$_invoke$arity$variadic(argseq__
 });
 
 (cljs.spec.gen.alpha.keyword.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16007);
+return cljs.core.deref(g__11609__auto___16103);
 }));
 
 (cljs.spec.gen.alpha.keyword.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.keyword.cljs$lang$applyTo = (function (seq15139){
+(cljs.spec.gen.alpha.keyword.cljs$lang$applyTo = (function (seq15331){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15139));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15331));
 }));
 
 
-var g__11609__auto___16033 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16117 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.keyword_ns !== 'undefined')){
 return clojure.test.check.generators.keyword_ns;
 } else {
@@ -1471,14 +1471,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.keyword_ns = (function cljs$spec$gen$alpha$keyword_ns(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16037 = arguments.length;
-var i__5727__auto___16039 = (0);
+var len__5726__auto___16121 = arguments.length;
+var i__5727__auto___16122 = (0);
 while(true){
-if((i__5727__auto___16039 < len__5726__auto___16037)){
-args__5732__auto__.push((arguments[i__5727__auto___16039]));
+if((i__5727__auto___16122 < len__5726__auto___16121)){
+args__5732__auto__.push((arguments[i__5727__auto___16122]));
 
-var G__16041 = (i__5727__auto___16039 + (1));
-i__5727__auto___16039 = G__16041;
+var G__16123 = (i__5727__auto___16122 + (1));
+i__5727__auto___16122 = G__16123;
 continue;
 } else {
 }
@@ -1490,19 +1490,19 @@ return cljs.spec.gen.alpha.keyword_ns.cljs$core$IFn$_invoke$arity$variadic(argse
 });
 
 (cljs.spec.gen.alpha.keyword_ns.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16033);
+return cljs.core.deref(g__11609__auto___16117);
 }));
 
 (cljs.spec.gen.alpha.keyword_ns.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.keyword_ns.cljs$lang$applyTo = (function (seq15156){
+(cljs.spec.gen.alpha.keyword_ns.cljs$lang$applyTo = (function (seq15349){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15156));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15349));
 }));
 
 
-var g__11609__auto___16042 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16126 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.large_integer !== 'undefined')){
 return clojure.test.check.generators.large_integer;
 } else {
@@ -1514,14 +1514,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.large_integer = (function cljs$spec$gen$alpha$large_integer(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16043 = arguments.length;
-var i__5727__auto___16044 = (0);
+var len__5726__auto___16130 = arguments.length;
+var i__5727__auto___16132 = (0);
 while(true){
-if((i__5727__auto___16044 < len__5726__auto___16043)){
-args__5732__auto__.push((arguments[i__5727__auto___16044]));
+if((i__5727__auto___16132 < len__5726__auto___16130)){
+args__5732__auto__.push((arguments[i__5727__auto___16132]));
 
-var G__16046 = (i__5727__auto___16044 + (1));
-i__5727__auto___16044 = G__16046;
+var G__16133 = (i__5727__auto___16132 + (1));
+i__5727__auto___16132 = G__16133;
 continue;
 } else {
 }
@@ -1533,19 +1533,19 @@ return cljs.spec.gen.alpha.large_integer.cljs$core$IFn$_invoke$arity$variadic(ar
 });
 
 (cljs.spec.gen.alpha.large_integer.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16042);
+return cljs.core.deref(g__11609__auto___16126);
 }));
 
 (cljs.spec.gen.alpha.large_integer.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.large_integer.cljs$lang$applyTo = (function (seq15191){
+(cljs.spec.gen.alpha.large_integer.cljs$lang$applyTo = (function (seq15372){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15191));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15372));
 }));
 
 
-var g__11609__auto___16051 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16135 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.ratio !== 'undefined')){
 return clojure.test.check.generators.ratio;
 } else {
@@ -1557,14 +1557,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.ratio = (function cljs$spec$gen$alpha$ratio(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16054 = arguments.length;
-var i__5727__auto___16056 = (0);
+var len__5726__auto___16138 = arguments.length;
+var i__5727__auto___16139 = (0);
 while(true){
-if((i__5727__auto___16056 < len__5726__auto___16054)){
-args__5732__auto__.push((arguments[i__5727__auto___16056]));
+if((i__5727__auto___16139 < len__5726__auto___16138)){
+args__5732__auto__.push((arguments[i__5727__auto___16139]));
 
-var G__16057 = (i__5727__auto___16056 + (1));
-i__5727__auto___16056 = G__16057;
+var G__16140 = (i__5727__auto___16139 + (1));
+i__5727__auto___16139 = G__16140;
 continue;
 } else {
 }
@@ -1576,19 +1576,19 @@ return cljs.spec.gen.alpha.ratio.cljs$core$IFn$_invoke$arity$variadic(argseq__57
 });
 
 (cljs.spec.gen.alpha.ratio.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16051);
+return cljs.core.deref(g__11609__auto___16135);
 }));
 
 (cljs.spec.gen.alpha.ratio.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.ratio.cljs$lang$applyTo = (function (seq15193){
+(cljs.spec.gen.alpha.ratio.cljs$lang$applyTo = (function (seq15376){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15193));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15376));
 }));
 
 
-var g__11609__auto___16064 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16142 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.simple_type !== 'undefined')){
 return clojure.test.check.generators.simple_type;
 } else {
@@ -1600,14 +1600,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.simple_type = (function cljs$spec$gen$alpha$simple_type(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16066 = arguments.length;
-var i__5727__auto___16067 = (0);
+var len__5726__auto___16146 = arguments.length;
+var i__5727__auto___16148 = (0);
 while(true){
-if((i__5727__auto___16067 < len__5726__auto___16066)){
-args__5732__auto__.push((arguments[i__5727__auto___16067]));
+if((i__5727__auto___16148 < len__5726__auto___16146)){
+args__5732__auto__.push((arguments[i__5727__auto___16148]));
 
-var G__16068 = (i__5727__auto___16067 + (1));
-i__5727__auto___16067 = G__16068;
+var G__16151 = (i__5727__auto___16148 + (1));
+i__5727__auto___16148 = G__16151;
 continue;
 } else {
 }
@@ -1619,19 +1619,19 @@ return cljs.spec.gen.alpha.simple_type.cljs$core$IFn$_invoke$arity$variadic(args
 });
 
 (cljs.spec.gen.alpha.simple_type.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16064);
+return cljs.core.deref(g__11609__auto___16142);
 }));
 
 (cljs.spec.gen.alpha.simple_type.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.simple_type.cljs$lang$applyTo = (function (seq15205){
+(cljs.spec.gen.alpha.simple_type.cljs$lang$applyTo = (function (seq15394){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15205));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15394));
 }));
 
 
-var g__11609__auto___16069 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16169 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.simple_type_printable !== 'undefined')){
 return clojure.test.check.generators.simple_type_printable;
 } else {
@@ -1643,14 +1643,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.simple_type_printable = (function cljs$spec$gen$alpha$simple_type_printable(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16071 = arguments.length;
-var i__5727__auto___16072 = (0);
+var len__5726__auto___16193 = arguments.length;
+var i__5727__auto___16197 = (0);
 while(true){
-if((i__5727__auto___16072 < len__5726__auto___16071)){
-args__5732__auto__.push((arguments[i__5727__auto___16072]));
+if((i__5727__auto___16197 < len__5726__auto___16193)){
+args__5732__auto__.push((arguments[i__5727__auto___16197]));
 
-var G__16073 = (i__5727__auto___16072 + (1));
-i__5727__auto___16072 = G__16073;
+var G__16200 = (i__5727__auto___16197 + (1));
+i__5727__auto___16197 = G__16200;
 continue;
 } else {
 }
@@ -1662,19 +1662,19 @@ return cljs.spec.gen.alpha.simple_type_printable.cljs$core$IFn$_invoke$arity$var
 });
 
 (cljs.spec.gen.alpha.simple_type_printable.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16069);
+return cljs.core.deref(g__11609__auto___16169);
 }));
 
 (cljs.spec.gen.alpha.simple_type_printable.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.simple_type_printable.cljs$lang$applyTo = (function (seq15282){
+(cljs.spec.gen.alpha.simple_type_printable.cljs$lang$applyTo = (function (seq15414){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15282));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15414));
 }));
 
 
-var g__11609__auto___16076 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16210 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.string !== 'undefined')){
 return clojure.test.check.generators.string;
 } else {
@@ -1686,14 +1686,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.string = (function cljs$spec$gen$alpha$string(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16077 = arguments.length;
-var i__5727__auto___16078 = (0);
+var len__5726__auto___16215 = arguments.length;
+var i__5727__auto___16216 = (0);
 while(true){
-if((i__5727__auto___16078 < len__5726__auto___16077)){
-args__5732__auto__.push((arguments[i__5727__auto___16078]));
+if((i__5727__auto___16216 < len__5726__auto___16215)){
+args__5732__auto__.push((arguments[i__5727__auto___16216]));
 
-var G__16082 = (i__5727__auto___16078 + (1));
-i__5727__auto___16078 = G__16082;
+var G__16217 = (i__5727__auto___16216 + (1));
+i__5727__auto___16216 = G__16217;
 continue;
 } else {
 }
@@ -1705,19 +1705,19 @@ return cljs.spec.gen.alpha.string.cljs$core$IFn$_invoke$arity$variadic(argseq__5
 });
 
 (cljs.spec.gen.alpha.string.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16076);
+return cljs.core.deref(g__11609__auto___16210);
 }));
 
 (cljs.spec.gen.alpha.string.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.string.cljs$lang$applyTo = (function (seq15316){
+(cljs.spec.gen.alpha.string.cljs$lang$applyTo = (function (seq15420){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15316));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15420));
 }));
 
 
-var g__11609__auto___16088 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16224 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.string_ascii !== 'undefined')){
 return clojure.test.check.generators.string_ascii;
 } else {
@@ -1729,14 +1729,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.string_ascii = (function cljs$spec$gen$alpha$string_ascii(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16090 = arguments.length;
-var i__5727__auto___16091 = (0);
+var len__5726__auto___16232 = arguments.length;
+var i__5727__auto___16233 = (0);
 while(true){
-if((i__5727__auto___16091 < len__5726__auto___16090)){
-args__5732__auto__.push((arguments[i__5727__auto___16091]));
+if((i__5727__auto___16233 < len__5726__auto___16232)){
+args__5732__auto__.push((arguments[i__5727__auto___16233]));
 
-var G__16092 = (i__5727__auto___16091 + (1));
-i__5727__auto___16091 = G__16092;
+var G__16236 = (i__5727__auto___16233 + (1));
+i__5727__auto___16233 = G__16236;
 continue;
 } else {
 }
@@ -1748,19 +1748,19 @@ return cljs.spec.gen.alpha.string_ascii.cljs$core$IFn$_invoke$arity$variadic(arg
 });
 
 (cljs.spec.gen.alpha.string_ascii.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16088);
+return cljs.core.deref(g__11609__auto___16224);
 }));
 
 (cljs.spec.gen.alpha.string_ascii.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.string_ascii.cljs$lang$applyTo = (function (seq15349){
+(cljs.spec.gen.alpha.string_ascii.cljs$lang$applyTo = (function (seq15434){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15349));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15434));
 }));
 
 
-var g__11609__auto___16094 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16250 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.string_alphanumeric !== 'undefined')){
 return clojure.test.check.generators.string_alphanumeric;
 } else {
@@ -1772,14 +1772,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.string_alphanumeric = (function cljs$spec$gen$alpha$string_alphanumeric(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16101 = arguments.length;
-var i__5727__auto___16102 = (0);
+var len__5726__auto___16264 = arguments.length;
+var i__5727__auto___16269 = (0);
 while(true){
-if((i__5727__auto___16102 < len__5726__auto___16101)){
-args__5732__auto__.push((arguments[i__5727__auto___16102]));
+if((i__5727__auto___16269 < len__5726__auto___16264)){
+args__5732__auto__.push((arguments[i__5727__auto___16269]));
 
-var G__16105 = (i__5727__auto___16102 + (1));
-i__5727__auto___16102 = G__16105;
+var G__16270 = (i__5727__auto___16269 + (1));
+i__5727__auto___16269 = G__16270;
 continue;
 } else {
 }
@@ -1791,19 +1791,19 @@ return cljs.spec.gen.alpha.string_alphanumeric.cljs$core$IFn$_invoke$arity$varia
 });
 
 (cljs.spec.gen.alpha.string_alphanumeric.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16094);
+return cljs.core.deref(g__11609__auto___16250);
 }));
 
 (cljs.spec.gen.alpha.string_alphanumeric.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.string_alphanumeric.cljs$lang$applyTo = (function (seq15392){
+(cljs.spec.gen.alpha.string_alphanumeric.cljs$lang$applyTo = (function (seq15444){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15392));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15444));
 }));
 
 
-var g__11609__auto___16106 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16287 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.symbol !== 'undefined')){
 return clojure.test.check.generators.symbol;
 } else {
@@ -1815,14 +1815,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.symbol = (function cljs$spec$gen$alpha$symbol(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16108 = arguments.length;
-var i__5727__auto___16110 = (0);
+var len__5726__auto___16294 = arguments.length;
+var i__5727__auto___16295 = (0);
 while(true){
-if((i__5727__auto___16110 < len__5726__auto___16108)){
-args__5732__auto__.push((arguments[i__5727__auto___16110]));
+if((i__5727__auto___16295 < len__5726__auto___16294)){
+args__5732__auto__.push((arguments[i__5727__auto___16295]));
 
-var G__16111 = (i__5727__auto___16110 + (1));
-i__5727__auto___16110 = G__16111;
+var G__16301 = (i__5727__auto___16295 + (1));
+i__5727__auto___16295 = G__16301;
 continue;
 } else {
 }
@@ -1834,19 +1834,19 @@ return cljs.spec.gen.alpha.symbol.cljs$core$IFn$_invoke$arity$variadic(argseq__5
 });
 
 (cljs.spec.gen.alpha.symbol.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16106);
+return cljs.core.deref(g__11609__auto___16287);
 }));
 
 (cljs.spec.gen.alpha.symbol.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.symbol.cljs$lang$applyTo = (function (seq15412){
+(cljs.spec.gen.alpha.symbol.cljs$lang$applyTo = (function (seq15447){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15412));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15447));
 }));
 
 
-var g__11609__auto___16113 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16311 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.symbol_ns !== 'undefined')){
 return clojure.test.check.generators.symbol_ns;
 } else {
@@ -1858,14 +1858,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.symbol_ns = (function cljs$spec$gen$alpha$symbol_ns(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16117 = arguments.length;
-var i__5727__auto___16118 = (0);
+var len__5726__auto___16320 = arguments.length;
+var i__5727__auto___16322 = (0);
 while(true){
-if((i__5727__auto___16118 < len__5726__auto___16117)){
-args__5732__auto__.push((arguments[i__5727__auto___16118]));
+if((i__5727__auto___16322 < len__5726__auto___16320)){
+args__5732__auto__.push((arguments[i__5727__auto___16322]));
 
-var G__16119 = (i__5727__auto___16118 + (1));
-i__5727__auto___16118 = G__16119;
+var G__16323 = (i__5727__auto___16322 + (1));
+i__5727__auto___16322 = G__16323;
 continue;
 } else {
 }
@@ -1877,19 +1877,19 @@ return cljs.spec.gen.alpha.symbol_ns.cljs$core$IFn$_invoke$arity$variadic(argseq
 });
 
 (cljs.spec.gen.alpha.symbol_ns.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16113);
+return cljs.core.deref(g__11609__auto___16311);
 }));
 
 (cljs.spec.gen.alpha.symbol_ns.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.symbol_ns.cljs$lang$applyTo = (function (seq15425){
+(cljs.spec.gen.alpha.symbol_ns.cljs$lang$applyTo = (function (seq15451){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15425));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15451));
 }));
 
 
-var g__11609__auto___16125 = (new cljs.spec.gen.alpha.LazyVar((function (){
+var g__11609__auto___16341 = (new cljs.spec.gen.alpha.LazyVar((function (){
 if((typeof clojure !== 'undefined') && (typeof clojure.test !== 'undefined') && (typeof clojure.test.check !== 'undefined') && (typeof clojure.test.check.generators !== 'undefined') && (typeof clojure.test.check.generators.uuid !== 'undefined')){
 return clojure.test.check.generators.uuid;
 } else {
@@ -1901,14 +1901,14 @@ throw (new Error(["Var ",cljs.core.str.cljs$core$IFn$_invoke$arity$1(new cljs.co
  */
 cljs.spec.gen.alpha.uuid = (function cljs$spec$gen$alpha$uuid(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16129 = arguments.length;
-var i__5727__auto___16130 = (0);
+var len__5726__auto___16342 = arguments.length;
+var i__5727__auto___16344 = (0);
 while(true){
-if((i__5727__auto___16130 < len__5726__auto___16129)){
-args__5732__auto__.push((arguments[i__5727__auto___16130]));
+if((i__5727__auto___16344 < len__5726__auto___16342)){
+args__5732__auto__.push((arguments[i__5727__auto___16344]));
 
-var G__16131 = (i__5727__auto___16130 + (1));
-i__5727__auto___16130 = G__16131;
+var G__16345 = (i__5727__auto___16344 + (1));
+i__5727__auto___16344 = G__16345;
 continue;
 } else {
 }
@@ -1920,15 +1920,15 @@ return cljs.spec.gen.alpha.uuid.cljs$core$IFn$_invoke$arity$variadic(argseq__573
 });
 
 (cljs.spec.gen.alpha.uuid.cljs$core$IFn$_invoke$arity$variadic = (function (args){
-return cljs.core.deref(g__11609__auto___16125);
+return cljs.core.deref(g__11609__auto___16341);
 }));
 
 (cljs.spec.gen.alpha.uuid.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.uuid.cljs$lang$applyTo = (function (seq15442){
+(cljs.spec.gen.alpha.uuid.cljs$lang$applyTo = (function (seq15455){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15442));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15455));
 }));
 
 /**
@@ -1937,14 +1937,14 @@ return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq
  */
 cljs.spec.gen.alpha.cat = (function cljs$spec$gen$alpha$cat(var_args){
 var args__5732__auto__ = [];
-var len__5726__auto___16147 = arguments.length;
-var i__5727__auto___16148 = (0);
+var len__5726__auto___16351 = arguments.length;
+var i__5727__auto___16352 = (0);
 while(true){
-if((i__5727__auto___16148 < len__5726__auto___16147)){
-args__5732__auto__.push((arguments[i__5727__auto___16148]));
+if((i__5727__auto___16352 < len__5726__auto___16351)){
+args__5732__auto__.push((arguments[i__5727__auto___16352]));
 
-var G__16152 = (i__5727__auto___16148 + (1));
-i__5727__auto___16148 = G__16152;
+var G__16354 = (i__5727__auto___16352 + (1));
+i__5727__auto___16352 = G__16354;
 continue;
 } else {
 }
@@ -1956,17 +1956,17 @@ return cljs.spec.gen.alpha.cat.cljs$core$IFn$_invoke$arity$variadic(argseq__5733
 });
 
 (cljs.spec.gen.alpha.cat.cljs$core$IFn$_invoke$arity$variadic = (function (gens){
-return cljs.spec.gen.alpha.fmap.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (p1__15449_SHARP_){
-return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.concat,p1__15449_SHARP_);
+return cljs.spec.gen.alpha.fmap.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (p1__15465_SHARP_){
+return cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.core.concat,p1__15465_SHARP_);
 }),cljs.core.apply.cljs$core$IFn$_invoke$arity$2(cljs.spec.gen.alpha.tuple,gens)], 0));
 }));
 
 (cljs.spec.gen.alpha.cat.cljs$lang$maxFixedArity = (0));
 
 /** @this {Function} */
-(cljs.spec.gen.alpha.cat.cljs$lang$applyTo = (function (seq15451){
+(cljs.spec.gen.alpha.cat.cljs$lang$applyTo = (function (seq15466){
 var self__5712__auto__ = this;
-return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15451));
+return self__5712__auto__.cljs$core$IFn$_invoke$arity$variadic(cljs.core.seq(seq15466));
 }));
 
 cljs.spec.gen.alpha.qualified_QMARK_ = (function cljs$spec$gen$alpha$qualified_QMARK_(ident){
@@ -1974,10 +1974,10 @@ return (!((cljs.core.namespace(ident) == null)));
 });
 cljs.spec.gen.alpha.gen_builtins = (new cljs.core.Delay((function (){
 var simple = cljs.spec.gen.alpha.simple_type_printable();
-return cljs.core.PersistentHashMap.fromArrays([cljs.core.qualified_keyword_QMARK_,cljs.core.seq_QMARK_,cljs.core.vector_QMARK_,cljs.core.any_QMARK_,cljs.core.boolean_QMARK_,cljs.core.char_QMARK_,cljs.core.some_QMARK_,cljs.core.inst_QMARK_,cljs.core.simple_symbol_QMARK_,cljs.core.sequential_QMARK_,cljs.core.float_QMARK_,cljs.core.set_QMARK_,cljs.core.map_QMARK_,cljs.core.empty_QMARK_,cljs.core.string_QMARK_,cljs.core.uri_QMARK_,cljs.core.double_QMARK_,cljs.core.int_QMARK_,cljs.core.associative_QMARK_,cljs.core.keyword_QMARK_,cljs.core.indexed_QMARK_,cljs.core.zero_QMARK_,cljs.core.simple_keyword_QMARK_,cljs.core.neg_int_QMARK_,cljs.core.nil_QMARK_,cljs.core.ident_QMARK_,cljs.core.qualified_ident_QMARK_,cljs.core.true_QMARK_,cljs.core.integer_QMARK_,cljs.core.nat_int_QMARK_,cljs.core.pos_int_QMARK_,cljs.core.uuid_QMARK_,cljs.core.false_QMARK_,cljs.core.list_QMARK_,cljs.core.simple_ident_QMARK_,cljs.core.number_QMARK_,cljs.core.qualified_symbol_QMARK_,cljs.core.seqable_QMARK_,cljs.core.symbol_QMARK_,cljs.core.coll_QMARK_],[cljs.spec.gen.alpha.such_that.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.spec.gen.alpha.qualified_QMARK_,cljs.spec.gen.alpha.keyword_ns()], 0)),cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([null], 0)),cljs.spec.gen.alpha.any_printable()], null)], 0)),cljs.spec.gen.alpha.boolean$(),cljs.spec.gen.alpha.char$(),cljs.spec.gen.alpha.such_that.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.some_QMARK_,cljs.spec.gen.alpha.any_printable()], 0)),cljs.spec.gen.alpha.fmap.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (p1__15465_SHARP_){
-return (new Date(p1__15465_SHARP_));
-}),cljs.spec.gen.alpha.large_integer()], 0)),cljs.spec.gen.alpha.symbol(),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0))], null)], 0)),cljs.spec.gen.alpha.double$(),cljs.spec.gen.alpha.set.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.map.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple,simple], 0)),cljs.spec.gen.alpha.elements.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [null,cljs.core.List.EMPTY,cljs.core.PersistentVector.EMPTY,cljs.core.PersistentArrayMap.EMPTY,cljs.core.PersistentHashSet.EMPTY], null)], 0)),cljs.spec.gen.alpha.string_alphanumeric(),cljs.spec.gen.alpha.fmap.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (p1__15464_SHARP_){
-return (new goog.Uri(["http://",cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__15464_SHARP_),".com"].join('')));
+return cljs.core.PersistentHashMap.fromArrays([cljs.core.qualified_keyword_QMARK_,cljs.core.seq_QMARK_,cljs.core.vector_QMARK_,cljs.core.any_QMARK_,cljs.core.boolean_QMARK_,cljs.core.char_QMARK_,cljs.core.some_QMARK_,cljs.core.inst_QMARK_,cljs.core.simple_symbol_QMARK_,cljs.core.sequential_QMARK_,cljs.core.float_QMARK_,cljs.core.set_QMARK_,cljs.core.map_QMARK_,cljs.core.empty_QMARK_,cljs.core.string_QMARK_,cljs.core.uri_QMARK_,cljs.core.double_QMARK_,cljs.core.int_QMARK_,cljs.core.associative_QMARK_,cljs.core.keyword_QMARK_,cljs.core.indexed_QMARK_,cljs.core.zero_QMARK_,cljs.core.simple_keyword_QMARK_,cljs.core.neg_int_QMARK_,cljs.core.nil_QMARK_,cljs.core.ident_QMARK_,cljs.core.qualified_ident_QMARK_,cljs.core.true_QMARK_,cljs.core.integer_QMARK_,cljs.core.nat_int_QMARK_,cljs.core.pos_int_QMARK_,cljs.core.uuid_QMARK_,cljs.core.false_QMARK_,cljs.core.list_QMARK_,cljs.core.simple_ident_QMARK_,cljs.core.number_QMARK_,cljs.core.qualified_symbol_QMARK_,cljs.core.seqable_QMARK_,cljs.core.symbol_QMARK_,cljs.core.coll_QMARK_],[cljs.spec.gen.alpha.such_that.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.spec.gen.alpha.qualified_QMARK_,cljs.spec.gen.alpha.keyword_ns()], 0)),cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([null], 0)),cljs.spec.gen.alpha.any_printable()], null)], 0)),cljs.spec.gen.alpha.boolean$(),cljs.spec.gen.alpha.char$(),cljs.spec.gen.alpha.such_that.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.some_QMARK_,cljs.spec.gen.alpha.any_printable()], 0)),cljs.spec.gen.alpha.fmap.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (p1__15495_SHARP_){
+return (new Date(p1__15495_SHARP_));
+}),cljs.spec.gen.alpha.large_integer()], 0)),cljs.spec.gen.alpha.symbol(),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0))], null)], 0)),cljs.spec.gen.alpha.double$(),cljs.spec.gen.alpha.set.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.map.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple,simple], 0)),cljs.spec.gen.alpha.elements.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [null,cljs.core.List.EMPTY,cljs.core.PersistentVector.EMPTY,cljs.core.PersistentArrayMap.EMPTY,cljs.core.PersistentHashSet.EMPTY], null)], 0)),cljs.spec.gen.alpha.string_alphanumeric(),cljs.spec.gen.alpha.fmap.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(function (p1__15494_SHARP_){
+return (new goog.Uri(["http://",cljs.core.str.cljs$core$IFn$_invoke$arity$1(p1__15494_SHARP_),".com"].join('')));
 }),cljs.spec.gen.alpha.uuid()], 0)),cljs.spec.gen.alpha.double$(),cljs.spec.gen.alpha.large_integer(),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.map.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple,simple], 0)),cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0))], null)], 0)),cljs.spec.gen.alpha.keyword_ns(),cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([(0)], 0)),cljs.spec.gen.alpha.keyword(),cljs.spec.gen.alpha.large_integer_STAR_.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"max","max",61366548),(-1)], null)], 0)),cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([null], 0)),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.keyword_ns(),cljs.spec.gen.alpha.symbol_ns()], null)], 0)),cljs.spec.gen.alpha.such_that.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.spec.gen.alpha.qualified_QMARK_,cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.keyword_ns(),cljs.spec.gen.alpha.symbol_ns()], null)], 0))], 0)),cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([true], 0)),cljs.spec.gen.alpha.large_integer(),cljs.spec.gen.alpha.large_integer_STAR_.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"min","min",444991522),(0)], null)], 0)),cljs.spec.gen.alpha.large_integer_STAR_.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"min","min",444991522),(1)], null)], 0)),cljs.spec.gen.alpha.uuid(),cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([false], 0)),cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.keyword(),cljs.spec.gen.alpha.symbol()], null)], 0)),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.large_integer(),cljs.spec.gen.alpha.double$()], null)], 0)),cljs.spec.gen.alpha.such_that.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.spec.gen.alpha.qualified_QMARK_,cljs.spec.gen.alpha.symbol_ns()], 0)),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.return$.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([null], 0)),cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.map.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple,simple], 0)),cljs.spec.gen.alpha.set.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.string_alphanumeric()], null)], 0)),cljs.spec.gen.alpha.symbol_ns(),cljs.spec.gen.alpha.one_of.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [cljs.spec.gen.alpha.map.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple,simple], 0)),cljs.spec.gen.alpha.list.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.vector.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0)),cljs.spec.gen.alpha.set.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([simple], 0))], null)], 0))]);
 }),null));
 /**

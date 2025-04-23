@@ -1,8 +1,10 @@
-(ns patient_backend.db
-  (:require [next.jdbc :as jdbc]
-            [clojure.tools.logging :as log]
-            [mount.core :refer [defstate]])
-  (:import [java.sql Date]))
+(ns patient-backend.db
+  (:require [mount.core :refer [defstate]]
+            [next.jdbc :as jdbc]
+            [taoensso.timbre :as log])
+  (:import [java.time ZonedDateTime LocalDate]
+           [java.sql Date]))
+
 (def db-spec
   {:dbtype   "postgresql"
    :host     "localhost"
@@ -37,7 +39,7 @@
                     (:address patient)
                     (:oms_number patient)])))
 (defn update-patient [id patient]
-  (let [birth-date (Date/valueOf (:birth_date patient))]
+  (let [birth-date (Date/valueOf (:birth_date patient))] ; <- simplified like insert-patient
     (jdbc/execute! ds
                    ["UPDATE patients SET full_name = ?, gender = ?, birth_date = ?, address = ?, oms_number = ? WHERE id = ?"
                     (:full_name patient)
@@ -45,12 +47,14 @@
                     birth-date
                     (:address patient)
                     (:oms_number patient)
-                    id])))
+                    (Integer/parseInt id)])))
+
 
 (defn get-all-patients []
   (jdbc/execute! ds ["SELECT * FROM patients"]))
 (defn delete-patient [id]
-  (jdbc/execute! ds ["DELETE FROM patients WHERE id = ?" id]))
+  (jdbc/execute! ds ["DELETE FROM patients WHERE id = ?" (Integer/parseInt id)]))
+
 
 ;; Function to search patients by a term (name, gender, or OMS number)
 (defn search-patient [search-term]

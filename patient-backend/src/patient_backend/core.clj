@@ -1,17 +1,18 @@
 (ns patient_backend.core
   (:require [ring.adapter.jetty :as jetty]
+            [ring.middleware.cors :refer [wrap-cors]]
             [ring.middleware.json :as json]
-            [compojure.core :refer [defroutes POST GET PUT DELETE]]
+            [compojure.core :refer [defroutes POST GET PUT DELETE OPTIONS]]
             [ring.util.response :refer [response]]
             [ring.middleware.params :refer [wrap-params]]
             [clojure.tools.logging :as log]
             [mount.core :as mount]
-            [patient_backend.db :as db]))
+            [patient-backend.db :as db]))
 
 (defn create-patient-handler [request]
   (let [patient (:body request)]
     (log/info "🧾 Received parsed patient:" patient)
-    (if patient
+    (if (some? patient)  ;; Ensure patient is not nil
       (do
         (db/insert-patient patient)
         {:status 201
@@ -19,33 +20,35 @@
       {:status 400
        :body {:message "Invalid patient data"}})))
 
-(defn update-patient-handler [request]
-  (let [patient (:body request)
-        id (:id patient)]
-    (if (and id patient)
+(defn update-patient-handler [id request]
+  (let [patient (:body request)]  ;; Get the patient data from the request body
+    (log/info "Received update request for patient ID:" id "with body:" patient)  ;; Log for debugging
+    (if id
       (do
-        (db/update-patient id patient)
+        (db/update-patient id patient)  ;; Call the update function with ID and patient data
         {:status 200
-         :body {:message "Patient updated"}})
+         :body {:message "Patient updated successfully"}})
       {:status 400
-       :body {:message "Missing or invalid patient data"}})))
+       :body {:error "Missing patient ID"}})))
+
+
 
 (defn get-all-patients-handler [_]
   (let [patients (db/get-all-patients)]
     {:status 200
      :body patients}))
 
-(defn delete-patient-handler [request]
-  (let [request-body (:body request)          ;; Extract the full body from the request
-        id (:id request-body)]                  ;; Extract 'id' from the body
-    (log/info "Received delete request with body:" request-body)  ;; Log the body for debugging
-    (if id
-      (do
-        (db/delete-patient id)
-        {:status 200
-         :body {:message "Patient deleted"}})
-      {:status 400
-       :body {:message "Missing patient ID"}})))
+(defn delete-patient-handler [id]
+  (if id
+    (do
+      (db/delete-patient id)
+      {:status 200
+       :headers {"Content-Type" "application/json"}
+       :body {:message "Patient deleted successfully"}})
+    {:status 400
+     :headers {"Content-Type" "application/json"}
+     :body {:error "Missing patient ID"}}))
+
 
 (defn search-patient-handler [request]
   (let [search-term (get-in request [:query-params "search"])] ;; << here!
@@ -83,21 +86,31 @@
   {:status 200
    :body {:message "Welcome to the Patient Backend"}})
 
+(defn options-handler [_]
+  {:status 200
+   :headers {"Access-Control-Allow-Origin" "*"
+             "Access-Control-Allow-Methods" "GET, POST, PUT, DELETE, OPTIONS"
+             "Access-Control-Allow-Headers" "Content-Type"}})
+
+
 (defroutes routes
            (POST "/patients" request (create-patient-handler request))
-           (PUT "/patients" request (update-patient-handler request))
+           (PUT "/patients/:id" [id :as request] (update-patient-handler id request))
            (GET "/patients" [] (get-all-patients-handler nil))
-           (DELETE "/patients" request (delete-patient-handler request))
+           (DELETE "/patients/:id" [id] (delete-patient-handler id))
            (GET "/patients/search" request (search-patient-handler request))  ;; Search route
            (GET "/patients/filter" request (filter-patient-handler request))
            (GET "/favicon.ico" [] (favicon-handler nil))
+           (OPTIONS "*" request (options-handler request))
            (GET "/" [] (root-handler nil)))
 
 (def app
   (-> routes
       wrap-params
       (json/wrap-json-response)
-      (json/wrap-json-body {:keywords? true})))
+      (json/wrap-json-body {:keywords? true})
+      (wrap-cors :access-control-allow-origin [#".*"]
+                 :access-control-allow-methods [:get :post :put :delete])))
 
 (defn start-server []
   (jetty/run-jetty app {:port 3000 :join? false}))

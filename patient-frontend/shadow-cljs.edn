@@ -1,0 +1,12 @@
+{:source-paths ["src"]
+ :dependencies [[reagent "1.2.0"]  ; Make sure you're using a recent version
+                [cljs-http "0.1.46"]]
+ :builds
+ {:app {:target :browser
+        :output-dir "resources/public/js"
+        :source-map true
+        :asset-path "/js"
+        :modules {:main {:entries [patient-frontend.core]}}}}
+
+ :dev-http {3001 {:root "resources/public"}} ; Define HTTP server on port 3001
+ :http-port 3001}

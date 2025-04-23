@@ -98,9 +98,10 @@
   (-> routes
       wrap-params
       (json/wrap-json-response)
-      (json/wrap-json-body {:keywords? true})
+      (json/wrap-json-body {:keywords? true :methods [:post :put :delete]})
       (wrap-cors :access-control-allow-origin [#".*"]
-                 :access-control-allow-methods [:get :post :put :delete])))
+                 :access-control-allow-methods [:get :post :put :delete]
+                 :access-control-allow-headers ["Content-Type"])))
 
 (defn start-server []
   (jetty/run-jetty app {:port 3000 :join? false}))

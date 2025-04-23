@@ -39,8 +39,7 @@
                     (:address patient)
                     (:oms_number patient)])))
 (defn update-patient [id patient]
-  (let [zoned-date (ZonedDateTime/parse (:birth_date patient))
-        birth-date (Date/valueOf (.toLocalDate zoned-date))]
+  (let [birth-date (Date/valueOf (:birth_date patient))] ; <- simplified like insert-patient
     (jdbc/execute! ds
                    ["UPDATE patients SET full_name = ?, gender = ?, birth_date = ?, address = ?, oms_number = ? WHERE id = ?"
                     (:full_name patient)
@@ -49,6 +48,7 @@
                     (:address patient)
                     (:oms_number patient)
                     (Integer/parseInt id)])))
+
 
 (defn get-all-patients []
   (jdbc/execute! ds ["SELECT * FROM patients"]))
